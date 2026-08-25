@@ -1,0 +1,81 @@
+============================================================
+PHASE 3 — TAXONOMIC CLASSIFICATION
+============================================================
+
+Date:
+Tue Aug 25 14:47:00 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+Classifier:
+UUID:        43ca7947-314a-4022-a2ba-217f1a62caff
+Type:        TaxonomicClassifier
+Data format: TaxonomicClassiferTemporaryPickleDirFmt
+
+Representative sequences:
+UUID:        03ff3a0e-278a-442f-bb58-2f6fa2035735
+Type:        FeatureData[Sequence]
+Data format: DNASequencesDirectoryFormat
+
+------------------------------------------------------------
+CLASSIFYING ASVs
+------------------------------------------------------------
+Saved FeatureData[Taxonomy] to: results/phase3/taxonomy.qza
+
+------------------------------------------------------------
+GENERATING TAXONOMY TABLE
+------------------------------------------------------------
+Saved Visualization to: results/phase3/taxonomy.qzv
+
+------------------------------------------------------------
+GENERATING TAXONOMIC BAR PLOTS
+------------------------------------------------------------
+Saved Visualization to: results/phase3/taxa-bar-plots.qzv
+
+------------------------------------------------------------
+EXPORTING TAXONOMY
+------------------------------------------------------------
+Exported results/phase3/taxonomy.qza as TSVTaxonomyDirectoryFormat to directory results/phase3/taxonomy-export
+
+Exported taxonomy:
+total 28K
+-rwxrwxrwx 1 orippee orippee 25K Aug 25 14:48 taxonomy.tsv
+
+------------------------------------------------------------
+TAXONOMY SUMMARY
+------------------------------------------------------------
+Number of classified ASVs:
+166
+
+First classified features:
+Feature ID	Taxon	Confidence
+fd44d4cb468fd7dc9b3227867714ed87	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.9999999992937205
+b4d07c2a22af0c99c73cf9722200d878	d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae	0.9999992279184423
+5a6c87d6a4eb5e114959f6192f29b641	d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium;s__	0.9999992704171167
+c6c3ab4e828fb40d6e05967b7aac9338	d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__	0.9823565980057026
+1b8dec58597978264025b9eba656ffb5	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.999999997442373
+333bbf9224442fc10cd497377d2b1d01	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.9999999847471345
+9d88acce7b2f13b58bf95d2f17ec8c2f	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.9999963888853189
+2c982937754e6321f861027032db80f7	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.9999999993627711
+b15193fce14759d1c06728933e044af6	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__	0.9999999677892509
+
+============================================================
+PHASE 3 CONCLUSION
+============================================================
+
+DADA2-derived ASVs were classified using the SILVA 138.2
+SSURef NR99 full-length uniform taxonomic classifier.
+
+Taxonomic assignments were saved as a QIIME 2 artifact,
+tabular visualization, exported TSV file, and longitudinal
+taxonomic bar-plot visualization.
+
+Taxonomic results will be used in subsequent phases to
+characterize microbial community composition and changes
+across the FMT time course.
+
+============================================================
+END PHASE 3
+============================================================
