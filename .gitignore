@@ -1,0 +1,46 @@
+# Raw sequencing data
+data/raw/
+data/sra/
+
+# Large/generated QIIME artifacts
+*.qza
+*.qzv
+
+# Generated FastQC reports
+results/qc/raw/
+
+# Redundant/intermediate export
+results/phase2/table-export/
+
+# Superseded scripts/logs
+setup_history.sh
+scripts/01_verify_data.sh
+scripts/02_quality_control.sh
+logs/01_verify_data.txt
+logs/02_quality_control.txt
+
+# Temporary / cache files
+work/
+.nextflow/
+.nextflow.log*
+__pycache__/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Conda / environments
+environment/
+.env
+.venv/
+venv/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log

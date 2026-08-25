@@ -1,0 +1,5 @@
+sample-id	forward-absolute-filepath	reverse-absolute-filepath
+R009_before	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657981_1.fastq.gz	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657981_2.fastq.gz
+R009_7d	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657995_1.fastq.gz	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657995_2.fastq.gz
+R009_14d	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657993_1.fastq.gz	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657993_2.fastq.gz
+R009_30d	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657994_1.fastq.gz	/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt/data/raw/SRR2657994_2.fastq.gz

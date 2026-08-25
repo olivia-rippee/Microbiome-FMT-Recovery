@@ -1,0 +1,6 @@
+sample-id	input	filtered	percentage of input passed filter	denoised	merged	percentage of input merged	non-chimeric	percentage of input non-chimeric
+#q2:types	numeric	numeric	numeric	numeric	numeric	numeric	numeric	numeric
+R009_14d	30280	23895	78.91	23479	21596	71.32	18849	62.25
+R009_30d	42129	24182	57.4	23718	21257	50.46	19484	46.25
+R009_7d	40010	21694	54.22	21246	19200	47.99	15599	38.99
+R009_before	37985	31588	83.16	30837	27445	72.25	21636	56.96

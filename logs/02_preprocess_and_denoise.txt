@@ -1,0 +1,153 @@
+============================================================
+PHASE 2 — READ PREPROCESSING AND ASV INFERENCE
+============================================================
+
+Date:
+Tue Aug 25 11:06:09 CDT 2026
+
+Project:
+/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt
+
+------------------------------------------------------------
+QIIME 2 ENVIRONMENT
+------------------------------------------------------------
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+------------------------------------------------------------
+METADATA
+------------------------------------------------------------
+sample-id	timepoint	srr
+R009_before	before	SRR2657981
+R009_7d	7d	SRR2657995
+R009_14d	14d	SRR2657993
+R009_30d	30d	SRR2657994
+
+------------------------------------------------------------
+INPUT FASTQ FILES
+------------------------------------------------------------
+-rwxrwxrwx 1 orippee orippee 4.7M Aug 20 14:00 data/raw/SRR2657981_1.fastq.gz
+-rwxrwxrwx 1 orippee orippee 5.7M Aug 20 14:00 data/raw/SRR2657981_2.fastq.gz
+-rwxrwxrwx 1 orippee orippee 3.6M Aug 21 10:15 data/raw/SRR2657993_1.fastq.gz
+-rwxrwxrwx 1 orippee orippee 4.6M Aug 21 10:15 data/raw/SRR2657993_2.fastq.gz
+-rwxrwxrwx 1 orippee orippee 5.2M Aug 21 10:16 data/raw/SRR2657994_1.fastq.gz
+-rwxrwxrwx 1 orippee orippee 6.8M Aug 21 10:16 data/raw/SRR2657994_2.fastq.gz
+-rwxrwxrwx 1 orippee orippee 5.0M Aug 21 10:14 data/raw/SRR2657995_1.fastq.gz
+-rwxrwxrwx 1 orippee orippee 6.4M Aug 21 10:14 data/raw/SRR2657995_2.fastq.gz
+
+------------------------------------------------------------
+PRIMER VERIFICATION
+------------------------------------------------------------
+Primer trimming:
+Skipped. Primer motifs were present in only a very small
+fraction of reads, suggesting primers had already been
+removed during upstream processing.
+Forward primer:
+
+
+Reverse primer:
+
+
+------------------------------------------------------------
+TRUNCATION PARAMETERS
+------------------------------------------------------------
+Forward truncation length: 230
+Reverse truncation length: 190
+Minimum overlap: 12
+Maximum expected errors R1: 2
+Maximum expected errors R2: 2
+
+------------------------------------------------------------
+QIIME 2 IMPORT
+------------------------------------------------------------
+Imported data/metadata/fastq_manifest.tsv as PairedEndFastqManifestPhred33V2 to results/phase2/demux-paired.qza
+
+------------------------------------------------------------
+DEMULTIPLEXED READ SUMMARY
+------------------------------------------------------------
+Saved Visualization to: results/phase2/demux-paired.qzv
+
+------------------------------------------------------------
+PRIMER REMOVAL
+------------------------------------------------------------
+------------------------------------------------------------
+POST-PRIMER-REMOVAL SUMMARY
+------------------------------------------------------------
+Saved Visualization to: results/phase2/trimmed.qzv
+
+------------------------------------------------------------
+DADA2 DENOISING
+------------------------------------------------------------
+Saved FeatureTable[Frequency] to: results/phase2/table.qza
+Saved FeatureData[Sequence] to: results/phase2/rep-seqs.qza
+Saved SampleData[DADA2Stats] to: results/phase2/denoising-stats.qza
+Saved DADA2BaseTransitionStats to: results/phase2/base-transition-stats.qza
+
+------------------------------------------------------------
+ASV FEATURE TABLE
+------------------------------------------------------------
+Usage: qiime feature-table summarize [OPTIONS]
+
+  Generate visual and tabular summaries of a feature table. Tabulate sample
+  and feature frequencies.
+
+Inputs:
+  --i-table ARTIFACT FeatureTable[Frequency | PresenceAbsence]
+                          The feature table to be summarized.       [required]
+Parameters:
+  --m-metadata-file METADATA...
+    (multiple arguments   The sample metadata.
+     will be merged)                                                [optional]
+Outputs:
+  --o-feature-frequencies ARTIFACT
+    ImmutableMetadata     Per-sample and total frequencies per feature.
+                                                                    [required]
+  --o-sample-frequencies ARTIFACT
+    ImmutableMetadata     Observed feature count and total frequencies per
+                          sample.                                   [required]
+  --o-summary VISUALIZATION
+                          Visual summary of feature table           [required]
+Miscellaneous:
+  --output-dir PATH       Output unspecified results to a directory
+  --verbose / --quiet     Display verbose output to stdout and/or stderr
+                          during execution of this action. Or silence output
+                          if execution is successful (silence is golden).
+  --recycle-pool TEXT     Use a cache pool for pipeline resumption. QIIME 2
+                          will cache your results in this pool for reuse by
+                          future invocations. These pool are retained until
+                          deleted by the user. If not provided, QIIME 2 will
+                          create a pool which is automatically reused by
+                          invocations of the same action and removed if the
+                          action is successful. Note: these pools are local to
+                          the cache you are using.
+  --no-recycle            Do not recycle results from a previous failed
+                          pipeline run or save the results from this run for
+                          future recycling.
+  --parallel              Execute your action in parallel. This flag will use
+                          your default parallel config.
+  --parallel-config FILE  Execute your action in parallel using a config at
+                          the indicated path.
+  --example-data PATH     Write example data and exit.
+  --citations             Show citations and exit.
+  --use-cache DIRECTORY   Specify the cache to be used for the intermediate
+                          work of this action. If not provided, the default
+                          cache under $TMP/qiime2/<uname> will be used.
+                          IMPORTANT FOR HPC USERS: If you are on an HPC system
+                          and are using parallel execution it is important to
+                          set this to a location that is globally accessible
+                          to all nodes in the cluster.
+  --help                  Show this message and exit.
+
+Examples:
+  # ### example: feature table summarize
+  qiime feature-table summarize \
+    --i-table feature-table.qza \
+    --o-feature-frequencies feature-frequencies.qza \
+    --o-sample-frequencies sample-frequencies.qza \
+    --o-summary visual-summary.qzv
+  
+
+                  There were some problems with the command:                  
+ (1/2?) No such option: --m-sample-metadata-file Did you mean --m-metadata-
+  file?
+ (2/2?) No such option: --o-visualization

@@ -1,0 +1,181 @@
+============================================================
+PHASE 1 — RAW DATA ACQUISITION, ORGANIZATION, AND QC
+============================================================
+
+Date:
+Mon Aug 24 15:06:00 CDT 2026
+
+Project directory:
+/mnt/c/Users/ORippee/OneDrive - Kemin Industries/microbiome-fmt
+
+------------------------------------------------------------
+SOFTWARE
+------------------------------------------------------------
+FastQC:
+FastQC v0.12.1
+
+SRA Toolkit:
+
+
+fasterq-dump:
+
+
+------------------------------------------------------------
+SAMPLE METADATA
+------------------------------------------------------------
+sample_id	timepoint	srr
+R009_before	before	SRR2657981
+R009_7d	7d	SRR2657995
+R009_14d	14d	SRR2657993
+R009_30d	30d	SRR2657994
+
+------------------------------------------------------------
+RAW FASTQ FILES
+------------------------------------------------------------
+-rwxrwxrwx 1 orippee orippee 21M Aug 20 14:00 data/raw/SRR2657981_1.fastq
+-rwxrwxrwx 1 orippee orippee 21M Aug 20 14:00 data/raw/SRR2657981_2.fastq
+-rwxrwxrwx 1 orippee orippee 17M Aug 21 10:15 data/raw/SRR2657993_1.fastq
+-rwxrwxrwx 1 orippee orippee 17M Aug 21 10:15 data/raw/SRR2657993_2.fastq
+-rwxrwxrwx 1 orippee orippee 23M Aug 21 10:16 data/raw/SRR2657994_1.fastq
+-rwxrwxrwx 1 orippee orippee 23M Aug 21 10:16 data/raw/SRR2657994_2.fastq
+-rwxrwxrwx 1 orippee orippee 22M Aug 21 10:14 data/raw/SRR2657995_1.fastq
+-rwxrwxrwx 1 orippee orippee 22M Aug 21 10:14 data/raw/SRR2657995_2.fastq
+
+------------------------------------------------------------
+READ COUNTS
+------------------------------------------------------------
+SRR2657981_1.fastq: 37985 reads
+SRR2657981_2.fastq: 37985 reads
+SRR2657993_1.fastq: 30280 reads
+SRR2657993_2.fastq: 30280 reads
+SRR2657994_1.fastq: 42129 reads
+SRR2657994_2.fastq: 42129 reads
+SRR2657995_1.fastq: 40010 reads
+SRR2657995_2.fastq: 40010 reads
+
+------------------------------------------------------------
+SRA ARCHIVES
+------------------------------------------------------------
+data/sra/SRR2657981/SRR2657981.sra
+data/sra/SRR2657993/SRR2657993.sra
+data/sra/SRR2657994/SRR2657994.sra
+data/sra/SRR2657995/SRR2657995.sra
+
+------------------------------------------------------------
+FASTQC
+------------------------------------------------------------
+Running FastQC on raw FASTQ files...
+
+null
+null
+null
+null
+null
+null
+null
+null
+Analysis complete for SRR2657981_1.fastq
+Analysis complete for SRR2657981_2.fastq
+Analysis complete for SRR2657993_1.fastq
+Analysis complete for SRR2657993_2.fastq
+Analysis complete for SRR2657994_1.fastq
+Analysis complete for SRR2657994_2.fastq
+Analysis complete for SRR2657995_1.fastq
+Analysis complete for SRR2657995_2.fastq
+
+FastQC reports:
+results/qc/raw/SRR2657981_1_fastqc.html
+results/qc/raw/SRR2657981_1_fastqc.zip
+results/qc/raw/SRR2657981_2_fastqc.html
+results/qc/raw/SRR2657981_2_fastqc.zip
+results/qc/raw/SRR2657993_1_fastqc.html
+results/qc/raw/SRR2657993_1_fastqc.zip
+results/qc/raw/SRR2657993_2_fastqc.html
+results/qc/raw/SRR2657993_2_fastqc.zip
+results/qc/raw/SRR2657994_1_fastqc.html
+results/qc/raw/SRR2657994_1_fastqc.zip
+results/qc/raw/SRR2657994_2_fastqc.html
+results/qc/raw/SRR2657994_2_fastqc.zip
+results/qc/raw/SRR2657995_1_fastqc.html
+results/qc/raw/SRR2657995_1_fastqc.zip
+results/qc/raw/SRR2657995_2_fastqc.html
+results/qc/raw/SRR2657995_2_fastqc.zip
+
+============================================================
+RAW-READ QC OBSERVATIONS
+============================================================
+
+Dataset:
+Four samples, each represented by paired-end 250-bp reads.
+
+Samples:
+  R009_before -> SRR2657981
+  R009_7d     -> SRR2657995
+  R009_14d    -> SRR2657993
+  R009_30d    -> SRR2657994
+
+Forward-read quality:
+  SRR2657981 R1 showed generally high quality through
+  most of the 250-bp read, with increasing variability
+  toward the 3-prime end.
+
+Reverse-read quality:
+  SRR2657981 R2 showed generally good quality through
+  approximately 160 bp.
+  Quality became increasingly variable after approximately
+  165 bp and declined substantially after approximately
+  200 bp.
+  Bases approximately 235-250 were extremely low quality.
+
+Adapter assessment:
+  No substantial Illumina adapter contamination was
+  observed in the reviewed FastQC reports.
+
+Overrepresented sequences:
+  Numerous highly abundant sequences were observed.
+  Because this is targeted 16S amplicon sequencing,
+  sequence overrepresentation is expected to some degree
+  and is not automatically interpreted as contamination.
+
+Read structure:
+  Forward and reverse reads show the expected structure
+  of paired-end reads from the same 16S amplicon.
+
+Primer assessment:
+  Obvious primer sequence was not identified from the
+  beginning of the reviewed reads.
+  Exact primer sequences will be verified from the source
+  study before any primer-removal step is performed.
+
+============================================================
+PHASE 1 CONCLUSION
+============================================================
+
+The raw sequencing dataset was successfully acquired,
+organized, converted to paired-end FASTQ format, and
+verified against the sample metadata.
+
+The dataset consists of 250-bp paired-end Illumina reads
+from a targeted 16S rRNA amplicon experiment.
+
+Raw-read quality was generally high through most of the
+read length, with greater quality degradation toward the
+3-prime ends, particularly in the reverse reads.
+
+The reverse reads showed substantial quality degradation
+after approximately 200-225 bp, with the final approximately
+15 bp being extremely low quality.
+
+No substantial Illumina adapter contamination was observed.
+Overrepresented sequences were observed and are considered
+compatible with the targeted amplicon nature of the dataset.
+
+The raw FASTQ files were NOT modified during Phase 1.
+
+Quality filtering, truncation, primer removal, denoising,
+paired-end merging, and chimera removal are deferred to
+Phase 2.
+
+============================================================
+END PHASE 1
+============================================================
