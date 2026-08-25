@@ -1,0 +1,162 @@
+============================================================
+PHASE 4 — ALPHA AND BETA DIVERSITY ANALYSIS
+============================================================
+
+Date:
+Tue Aug 25 15:14:58 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+Rarefaction depth:
+15000
+
+------------------------------------------------------------
+PHYLOGENETIC TREE
+------------------------------------------------------------
+Saved FeatureData[AlignedSequence] to: results/phase4/aligned-rep-seqs.qza
+Saved FeatureData[AlignedSequence] to: results/phase4/masked-aligned-rep-seqs.qza
+Saved Phylogeny[Unrooted] to: results/phase4/unrooted-tree.qza
+Saved Phylogeny[Rooted] to: results/phase4/rooted-tree.qza
+
+------------------------------------------------------------
+CORE DIVERSITY METRICS
+------------------------------------------------------------
+Saved FeatureTable[Frequency] to: results/phase4/core-metrics/rarefied_table.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/core-metrics/faith_pd_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/core-metrics/observed_features_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/core-metrics/shannon_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/core-metrics/evenness_vector.qza
+Saved DistanceMatrix to: results/phase4/core-metrics/unweighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: results/phase4/core-metrics/weighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: results/phase4/core-metrics/jaccard_distance_matrix.qza
+Saved DistanceMatrix to: results/phase4/core-metrics/bray_curtis_distance_matrix.qza
+Saved PCoAResults to: results/phase4/core-metrics/unweighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: results/phase4/core-metrics/weighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: results/phase4/core-metrics/jaccard_pcoa_results.qza
+Saved PCoAResults to: results/phase4/core-metrics/bray_curtis_pcoa_results.qza
+Saved Visualization to: results/phase4/core-metrics/unweighted_unifrac_emperor.qzv
+Saved Visualization to: results/phase4/core-metrics/weighted_unifrac_emperor.qzv
+Saved Visualization to: results/phase4/core-metrics/jaccard_emperor.qzv
+Saved Visualization to: results/phase4/core-metrics/bray_curtis_emperor.qzv
+
+------------------------------------------------------------
+ALPHA DIVERSITY
+------------------------------------------------------------
+Saved SampleData[AlphaDiversity] to: results/phase4/observed-features.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/shannon.qza
+Saved SampleData[AlphaDiversity] to: results/phase4/faith-pd.qza
+
+------------------------------------------------------------
+EXPORTING ALPHA DIVERSITY
+------------------------------------------------------------
+Exported results/phase4/observed-features.qza as AlphaDiversityDirectoryFormat to directory results/phase4/alpha-export/observed-features
+Exported results/phase4/shannon.qza as AlphaDiversityDirectoryFormat to directory results/phase4/alpha-export/shannon
+Exported results/phase4/faith-pd.qza as AlphaDiversityDirectoryFormat to directory results/phase4/alpha-export/faith-pd
+
+------------------------------------------------------------
+ALPHA RAREFACTION
+------------------------------------------------------------
+Saved Visualization to: results/phase4/alpha-rarefaction.qzv
+
+------------------------------------------------------------
+BETA DIVERSITY
+------------------------------------------------------------
+Saved DistanceMatrix to: results/phase4/bray-curtis.qza
+Saved DistanceMatrix to: results/phase4/jaccard.qza
+Saved DistanceMatrix to: results/phase4/weighted-unifrac.qza
+Saved DistanceMatrix to: results/phase4/unweighted-unifrac.qza
+
+------------------------------------------------------------
+PCOA
+------------------------------------------------------------
+Saved PCoAResults to: results/phase4/bray-curtis-pcoa.qza
+Saved Visualization to: results/phase4/bray-curtis-emperor.qzv
+Saved PCoAResults to: results/phase4/jaccard-pcoa.qza
+Saved Visualization to: results/phase4/jaccard-emperor.qzv
+Saved PCoAResults to: results/phase4/weighted-unifrac-pcoa.qza
+Saved Visualization to: results/phase4/weighted-unifrac-emperor.qzv
+Saved PCoAResults to: results/phase4/unweighted-unifrac-pcoa.qza
+Saved Visualization to: results/phase4/unweighted-unifrac-emperor.qzv
+
+------------------------------------------------------------
+EXPORTING BETA DIVERSITY MATRICES
+------------------------------------------------------------
+Exported results/phase4/bray-curtis.qza as DistanceMatrixDirectoryFormat to directory results/phase4/beta-export/bray-curtis
+Exported results/phase4/jaccard.qza as DistanceMatrixDirectoryFormat to directory results/phase4/beta-export/jaccard
+Exported results/phase4/weighted-unifrac.qza as DistanceMatrixDirectoryFormat to directory results/phase4/beta-export/weighted-unifrac
+Exported results/phase4/unweighted-unifrac.qza as DistanceMatrixDirectoryFormat to directory results/phase4/beta-export/unweighted-unifrac
+
+------------------------------------------------------------
+ALPHA DIVERSITY RESULTS
+------------------------------------------------------------
+
+Observed features:
+	observed_features
+R009_14d	59
+R009_30d	68
+R009_7d	62
+R009_before	93
+
+Shannon diversity:
+	shannon_entropy
+R009_14d	4.250599643746169
+R009_30d	4.592848240335135
+R009_7d	4.607261022612709
+R009_before	4.901374269455361
+
+Faith's PD:
+	faith_pd
+R009_14d	5.051051562606858
+R009_30d	5.231098715514177
+R009_7d	5.564016313666126
+R009_before	7.142030379760788
+
+------------------------------------------------------------
+SELECTED BETA DIVERSITY RESULTS
+------------------------------------------------------------
+
+Bray-Curtis:
+	R009_14d	R009_30d	R009_7d	R009_before
+R009_14d	0.0	0.4593333333333333	0.5556	0.856
+R009_30d	0.4593333333333333	0.0	0.4116	0.8223333333333334
+R009_7d	0.5556	0.4116	0.0	0.8279333333333333
+R009_before	0.856	0.8223333333333334	0.8279333333333333	0.0
+
+Weighted UniFrac:
+	R009_14d	R009_30d	R009_7d	R009_before
+R009_14d	0	0.12872314453125	0.127313643693924	0.2849659323692322
+R009_30d	0.12872314453125	0	0.1600918769836426	0.2889143228530884
+R009_7d	0.127313643693924	0.1600918769836426	0	0.223698765039444
+R009_before	0.2849659323692322	0.2889143228530884	0.223698765039444	0
+
+============================================================
+PHASE 4 CONCLUSION
+============================================================
+
+Alpha and beta diversity metrics were calculated across
+the four longitudinal FMT samples.
+
+All downstream diversity metrics were calculated using the
+same feature table rarefied to 15,000 reads per sample.
+
+Alpha diversity included observed features, Shannon
+diversity, and Faith's phylogenetic diversity.
+
+Beta diversity included Bray-Curtis, Jaccard, weighted
+UniFrac, and unweighted UniFrac distances.
+
+PCoA and Emperor visualizations were generated for each
+beta-diversity metric.
+
+A rarefaction depth of 15,000 reads was selected so that
+all four samples were retained in the pilot analysis.
+
+Because only one participant is included, diversity
+patterns are interpreted descriptively rather than as
+population-level statistical inference.
+
+============================================================
+END PHASE 4
+============================================================
