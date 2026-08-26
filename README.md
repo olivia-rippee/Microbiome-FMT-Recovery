@@ -2,171 +2,288 @@
 
 ## Overview
 
-This repository contains a reproducible computational analysis of longitudinal gut microbiome data following fecal microbiota transplantation (FMT).
+This repository contains a reproducible longitudinal analysis of gut microbiome changes following fecal microbiota transplantation (FMT).
 
 The project uses publicly available 16S rRNA gene amplicon sequencing data from NCBI BioProject **PRJNA298590**.
 
-The current pilot analysis focuses on participant **R009**, sampled before FMT and at three post-FMT timepoints.
+The completed cohort analysis includes:
 
-The goal of this project is to build a transparent and reproducible workflow for examining longitudinal changes in gut microbial community composition following FMT.
+- 52 participants
+- 4 longitudinal samples per participant
+- 208 total samples
+- pre-FMT baseline
+- 7 days post-FMT
+- 14 days post-FMT
+- 30 days post-FMT
+
+The workflow covers raw sequencing-data acquisition, quality control, ASV inference, taxonomic classification, phylogenetic and non-phylogenetic diversity analysis, repeated-measures longitudinal statistics, differential abundance analysis, and integrated cohort-level visualization.
 
 ---
 
 ## Research Question
 
-**How does gut microbial community composition change over time following fecal microbiota transplantation?**
+**How does gut microbial community structure and composition change during the first 30 days following fecal microbiota transplantation?**
 
-The pilot analysis establishes the sequencing-processing workflow needed to subsequently examine taxonomic composition and longitudinal community changes.
+The analysis evaluates:
+
+- sequencing and denoising performance
+- alpha-diversity changes
+- beta-diversity displacement from each participant's pre-FMT baseline
+- longitudinal taxonomic restructuring
+- persistent differential taxa following FMT
 
 ---
 
-## Pilot Dataset
+## Cohort Design
 
-The pilot dataset consists of four paired-end sequencing samples from participant R009:
+The cohort contains **52 participants**, each sampled at four timepoints:
 
-| Sample | Timepoint | SRA Run |
-|---|---|---|
-| R009_before | Before FMT | SRR2657981 |
-| R009_7d | 7 days | SRR2657995 |
-| R009_14d | 14 days | SRR2657993 |
-| R009_30d | 30 days | SRR2657994 |
+| Timepoint | Description | Samples |
+|---|---|---:|
+| before | Pre-FMT baseline | 52 |
+| 7d | 7 days post-FMT | 52 |
+| 14d | 14 days post-FMT | 52 |
+| 30d | 30 days post-FMT | 52 |
+| **Total** | | **208** |
 
-Raw sequencing data are retrieved from NCBI SRA and are intentionally not stored in this repository.
+The balanced longitudinal design allows each participant to serve as their own pre-FMT reference.
+
+Raw sequencing data are retrieved from NCBI SRA and are intentionally excluded from version control.
 
 ---
 
 ## Analysis Workflow
 
-The project is organized into reproducible analysis phases.
+### Pilot Workflow — Phases 1–7
 
-### Phase 1 — Data Acquisition and Quality Control
+The project was initially developed and validated using a four-timepoint pilot participant.
 
-The initial workflow includes:
+The pilot workflow established:
 
-- identification of the appropriate NCBI SRA accessions
-- SRA data acquisition
-- paired-end FASTQ generation
-- sample metadata organization
-- FASTQ integrity verification
-- read-count verification
-- FastQC analysis
-- inspection of forward and reverse read-quality profiles
-- QIIME 2 paired-end read-quality visualization
+1. raw-data acquisition and quality control
+2. paired-end preprocessing and DADA2 ASV inference
+3. taxonomic classification
+4. alpha- and beta-diversity analysis
+5. taxonomic composition analysis
+6. longitudinal taxonomic visualization
+7. integrated pilot summary
 
-Raw sequencing files were obtained using the NCBI SRA Toolkit and converted to paired-end FASTQ files using `fasterq-dump`.
+The validated workflow was subsequently expanded to the complete cohort.
 
-FASTQ files were subsequently compressed using gzip for QIIME 2 import.
+---
 
-### Phase 2 — Read Preprocessing and ASV Inference
+## Cohort Workflow — Phases 8–16
 
-Paired-end reads were processed using QIIME 2 and DADA2.
+### Phase 8 — Cohort Metadata
 
-Processing included:
+Constructs and validates longitudinal metadata for the complete 52-participant cohort.
 
-- paired-end FASTQ import
-- quality assessment
+### Phase 9 — Cohort FASTQ Acquisition
+
+Downloads and organizes the corresponding NCBI SRA sequencing runs and paired-end FASTQ files.
+
+### Phase 10 — Cohort Preprocessing and DADA2
+
+Processes all 208 samples using paired-end DADA2.
+
+Processing includes:
+
 - quality filtering
-- DADA2 denoising
-- paired-end read merging
-- chimera detection and removal
-- amplicon sequence variant (ASV) inference
-- generation of representative sequences
-- read-retention assessment
+- denoising
+- paired-read merging
+- chimera removal
+- ASV inference
+- representative-sequence generation
+- sequencing-retention assessment
 
-### DADA2 Parameters
-
-Based on FastQC results and QIIME 2 quality profiles, the following truncation lengths were selected:
+Forward and reverse reads were truncated to:
 
 | Parameter | Value |
 |---|---:|
 | Forward truncation | 230 bp |
 | Reverse truncation | 190 bp |
-| Minimum overlap | 12 bp |
-| Maximum expected errors, forward | 2 |
-| Maximum expected errors, reverse | 2 |
+
+The cohort median non-chimeric read retention was **61.78%**, with a range of **32.49%–80.26%**.
+
+### Phase 11 — Taxonomic Classification
+
+Cohort-wide ASVs were classified using a locally trained **SILVA 138.2 V4 Naive Bayes classifier**.
+
+A total of **1,571 ASVs** received taxonomic classifications.
+
+### Phase 12 — Cohort Diversity Analysis
+
+Alpha and beta diversity were calculated after rarefaction to **7,500 reads per sample**.
+
+This depth retained:
+
+- 208/208 samples
+- 52/52 participants with all four longitudinal timepoints
+
+Alpha-diversity metrics:
+
+- observed features
+- Shannon diversity
+- Faith's phylogenetic diversity
+- Pielou's evenness
+
+Beta-diversity metrics:
+
+- Bray-Curtis
+- Jaccard
+- weighted UniFrac
+- unweighted UniFrac
+
+Within-participant distances were also calculated from each participant's own pre-FMT baseline.
+
+### Phase 13 — Longitudinal Statistics
+
+Repeated-measures analyses were performed across the complete cohort.
+
+Alpha-diversity changes were evaluated using paired non-parametric comparisons and participant-level longitudinal models.
+
+Benjamini-Hochberg correction was applied to pairwise timepoint comparisons.
+
+Beta-diversity displacement from baseline was evaluated longitudinally at 7, 14, and 30 days.
+
+### Phase 14 — Differential Abundance
+
+Differential abundance was evaluated using **ANCOM-BC** at the family and genus levels.
+
+Post-FMT timepoints were compared with the pre-FMT baseline while controlling the false-discovery rate.
+
+Taxa significant across all three post-FMT timepoints were identified as persistent differential taxa.
+
+### Phase 15 — Differential Taxa Visualization
+
+Persistent genus-level ANCOM-BC results were summarized and visualized.
+
+Outputs include:
+
+- timepoint-specific log-fold-change plots
+- persistent-taxa heatmaps
+- ranked persistent increases and decreases
+- selected genus-level result tables
+
+### Phase 16 — Integrated Cohort Summary
+
+The final phase integrates:
+
+- sequencing retention
+- alpha diversity
+- beta diversity
+- longitudinal statistics
+- persistent differential abundance
+
+into cohort-level summary tables and figures.
 
 ---
 
-## Primer Handling
+## Key Results
 
-Expected primer motifs were investigated directly in the sequencing reads.
+### Sequencing
 
-Primer trimming was skipped because the expected primer motifs were detected in only a very small fraction of reads, consistent with primer sequences having already been removed during upstream processing.
+| Metric | Result |
+|---|---:|
+| Participants | 52 |
+| Samples | 208 |
+| Median non-chimeric retention | 61.78% |
+| Retention range | 32.49%–80.26% |
+| Classified ASVs | 1,571 |
 
-The decision to skip primer trimming is documented explicitly in the Phase 2 workflow rather than silently assuming primer removal.
+### Alpha Diversity
 
----
+Median values by timepoint:
 
-## Phase 2 Results
+| Timepoint | Observed Features | Shannon | Faith PD | Evenness |
+|---|---:|---:|---:|---:|
+| before | 20.0 | 2.402 | 2.678 | 0.560 |
+| 7d | 72.0 | 4.190 | 6.887 | 0.686 |
+| 14d | 82.5 | 4.545 | 7.070 | 0.708 |
+| 30d | 82.5 | 4.400 | 7.297 | 0.714 |
 
-DADA2 successfully generated an ASV feature table and representative sequences for all four longitudinal samples.
+All **12/12 baseline-versus-post-FMT alpha-diversity contrasts** were significant after multiple-testing correction.
 
-A total of **166 ASVs** were observed across the pilot dataset.
+These results demonstrate a rapid increase in microbial richness, diversity, phylogenetic diversity, and evenness following FMT.
 
-### DADA2 Read Retention
+### Community Displacement from Baseline
 
-| Sample | Input Reads | Filtered | Merged | Final Non-chimeric Reads | Final Retention |
-|---|---:|---:|---:|---:|---:|
-| R009_before | 37,985 | 31,588 | 27,445 | 21,636 | 56.96% |
-| R009_7d | 40,010 | 21,694 | 19,200 | 15,599 | 38.99% |
-| R009_14d | 30,280 | 23,895 | 21,596 | 18,849 | 62.25% |
-| R009_30d | 42,129 | 24,182 | 21,257 | 19,484 | 46.25% |
+Median within-participant distance from pre-FMT baseline:
 
-All four samples retained more than **15,000 non-chimeric reads** following DADA2 processing.
+| Timepoint | Bray-Curtis | Jaccard | Weighted UniFrac | Unweighted UniFrac |
+|---|---:|---:|---:|---:|
+| 7d | 0.956 | 0.951 | 0.451 | 0.761 |
+| 14d | 0.975 | 0.954 | 0.465 | 0.782 |
+| 30d | 0.971 | 0.956 | 0.466 | 0.772 |
 
-The 230-bp forward and 190-bp reverse truncation settings were therefore retained for downstream pilot analysis.
+Post-FMT communities therefore remained strongly displaced from each participant's original baseline through day 30.
 
-### Observed ASVs by Sample
+### Persistent Differential Genera
 
-| Sample | Final Reads | Observed ASVs |
-|---|---:|---:|
-| R009_before | 21,636 | 93 |
-| R009_7d | 15,599 | 62 |
-| R009_14d | 18,849 | 59 |
-| R009_30d | 19,484 | 68 |
+ANCOM-BC identified **70 genera** that differed significantly from baseline at all three post-FMT timepoints:
 
-Across all four samples, **166 unique ASVs** were represented in the feature table.
+- 52 persistent increases
+- 18 persistent decreases
 
-These values describe sequencing output following filtering, denoising, merging, and chimera removal. Taxonomic identities have not yet been assigned.
+Prominent persistent increases included:
+
+- *Blautia*
+- *Bacteroides*
+- *Dorea*
+- *Anaerostipes*
+- *Faecalibacterium*
+- *Mediterraneibacter*
+- *Anaerobutyricum*
+- *Bifidobacterium*
+- *Agathobacter*
+
+Prominent persistent decreases included:
+
+- Enterobacteriaceae-associated unresolved taxa
+- *Lacticaseibacillus*
+- *Veillonella*
+- *Lactiplantibacillus*
+- *Ligilactobacillus*
+- *Escherichia-Shigella*
+- *Pediococcus*
+- *Megasphaera*
+- *Proteus*
+- *Fusobacterium*
+
+Together, the diversity and differential-abundance results support rapid and sustained restructuring of the gut microbial community following FMT.
 
 ---
 
 ## Reproducibility
 
-The repository contains scripts documenting each major stage of the workflow:
+The analysis is organized into version-controlled scripts:
 
     scripts/
     ├── 00_environment_and_data_setup.sh
     ├── 01_raw_data_and_qc.sh
-    └── 02_preprocess_and_denoise.sh
+    ├── 02_preprocess_and_denoise.sh
+    ├── 03_build_silva_classifier.sh
+    ├── 03_taxonomic_classification.sh
+    ├── 04_diversity_analysis.sh
+    ├── 05_taxonomic_composition.sh
+    ├── 06_longitudinal_taxonomic_analysis.py
+    ├── 07_pilot_summary.py
+    ├── 08_build_cohort_metadata.py
+    ├── 09_download_cohort_fastqs.sh
+    ├── 10_cohort_preprocess_and_denoise.sh
+    ├── 11_cohort_taxonomic_classification.sh
+    ├── 12_cohort_diversity_analysis.sh
+    ├── 13_longitudinal_statistics.sh
+    ├── 14_cohort_differential_abundance.sh
+    ├── 14_summarize_ancombc.py
+    ├── 15_differential_taxa_visualization.py
+    └── 16_integrated_cohort_summary.py
 
-### 00_environment_and_data_setup.sh
+Execution logs are retained under `logs/`.
 
-Documents:
+Compact result tables and publication-oriented figures are retained under `results/`.
 
-- WSL/Ubuntu project setup
-- project directory structure
-- SRA Toolkit setup
-- sample accession mapping
-- SRA acquisition
-- FASTQ generation
-- FASTQ compression
-- Conda installation
-- QIIME 2 environment configuration
-- QIIME 2 import
-- quality-summary generation
-- truncation decisions
-- primer assessment
-
-This script primarily serves as a reproducibility and setup record.
-
-### 01_raw_data_and_qc.sh
-
-Documents the raw sequencing-data verification and quality-control workflow.
-
-### 02_preprocess_and_denoise.sh
-
-Documents the QIIME 2 preprocessing and DADA2 ASV-inference workflow, including the final processing parameters.
+Large generated QIIME 2 artifacts and raw sequencing files are intentionally excluded from Git.
 
 ---
 
@@ -176,18 +293,23 @@ The analysis was performed under **WSL2 / Ubuntu**.
 
 Primary software includes:
 
-- SRA Toolkit 3.2.1
-- FastQC 0.12.1
+- SRA Toolkit
+- FastQC
 - Miniconda
-- Python 3.12.13
+- Python 3.12
 - QIIME 2 / Rachis 2026.7
 - DADA2
+- q2-feature-classifier
+- q2-diversity
+- q2-longitudinal
+- q2-composition / ANCOM-BC
+- pandas
+- SciPy
+- matplotlib
 
-The QIIME 2 analysis environment used for the current workflow was:
+The QIIME 2 environment used for the cohort workflow was:
 
     rachis-qiime2-2026.7
-
-The environment includes QIIME 2 plugins for DADA2, feature-table analysis, taxonomic classification, diversity analysis, and related microbiome workflows.
 
 ---
 
@@ -196,100 +318,66 @@ The environment includes QIIME 2 plugins for DADA2, feature-table analysis, taxo
     microbiome-fmt/
     ├── README.md
     ├── .gitignore
-    │
     ├── data/
-    │   └── metadata/
-    │       ├── samples.tsv
-    │       └── fastq_manifest.tsv
-    │
+    │   └── cohort/
+    ├── reference/
     ├── scripts/
-    │   ├── 00_environment_and_data_setup.sh
-    │   ├── 01_raw_data_and_qc.sh
-    │   └── 02_preprocess_and_denoise.sh
-    │
     ├── logs/
-    │   ├── 01_raw_data_and_qc.txt
-    │   └── 02_preprocess_and_denoise.txt
-    │
     └── results/
-        └── phase2/
-            ├── denoising-stats-export/
-            │   └── stats.tsv
-            ├── feature-frequencies-export/
-            │   └── metadata.tsv
-            └── sample-frequencies-export/
-                └── metadata.tsv
+        ├── phase10/
+        ├── phase11/
+        ├── phase12/
+        ├── phase13/
+        ├── phase14/
+        ├── phase15/
+        └── phase16/
+
+Raw SRA archives, FASTQ files, large QIIME 2 artifacts, caches, and other regenerable intermediate files are excluded from version control.
 
 ---
 
 ## Data Availability
 
-Raw sequencing files are intentionally excluded from this repository.
+The sequencing data are publicly available through the NCBI Sequence Read Archive.
 
-The raw data are publicly available through the NCBI Sequence Read Archive and can be retrieved using the accession information documented in this repository.
+**NCBI BioProject: PRJNA298590**
 
-**NCBI BioProject:** PRJNA298590
+Accession mappings and cohort metadata required to reproduce the analysis are documented within the project workflow.
 
-Pilot SRA runs:
-
-- SRR2657981
-- SRR2657995
-- SRR2657993
-- SRR2657994
-
-Large raw FASTQ files, SRA archives, generated FastQC reports, and QIIME 2 artifacts are excluded from version control through `.gitignore`.
-
-This keeps the repository focused on reproducible code, metadata, processing decisions, logs, and compact analysis results.
+Raw sequencing files are intentionally not committed to Git because of their size.
 
 ---
 
-## Current Project Status
+## Interpretation
 
-### Completed
+Across the complete longitudinal cohort, FMT was associated with:
 
-**Phase 1 — Data acquisition and quality control**
+1. rapid increases in microbial richness and diversity,
+2. substantial restructuring of community composition relative to pre-FMT baseline,
+3. persistence of this altered community structure through at least day 30, and
+4. sustained increases and decreases in numerous bacterial taxa.
 
-- SRA acquisition
-- FASTQ generation
-- metadata creation
-- raw-read verification
-- FastQC
-- QIIME 2 quality assessment
+The balanced repeated-measures design allows these changes to be evaluated within participants rather than relying solely on cross-sectional comparisons.
 
-**Phase 2 — Read preprocessing and ASV inference**
+---
 
-- paired-end QIIME 2 import
-- DADA2 filtering
-- denoising
-- paired-end merging
-- chimera removal
-- ASV generation
-- representative-sequence generation
-- read-retention assessment
+## Project Status
 
-### Next
+**Cohort analysis complete through Phase 16.**
 
-**Phase 3 — Taxonomic Classification**
+Completed components include:
 
-The next stage will assign bacterial taxonomy to the inferred ASVs.
-
-Subsequent analysis will examine longitudinal changes in microbial community composition across:
-
-**Before FMT → 7 days → 14 days → 30 days**
-
-Future stages may include:
-
-- taxonomic classification
-- taxonomic composition visualization
+- raw-data acquisition and quality control
+- DADA2 ASV inference
+- SILVA taxonomic classification
+- phylogenetic reconstruction
 - alpha diversity
 - beta diversity
-- longitudinal community analysis
-- visualization of microbiome recovery following FMT
+- within-participant baseline-distance analysis
+- repeated-measures longitudinal statistics
+- ANCOM-BC differential abundance
+- persistent-taxa analysis
+- differential-taxa visualization
+- integrated cohort-level summary
 
----
-
-## Project Notes
-
-This repository is being developed as a reproducible bioinformatics workflow.
-
-Processing decisions, including quality-based truncation and primer handling, are documented explicitly so that the analysis can be reviewed, reproduced, and modified as the project develops.
+The repository now contains the complete reproducible computational workflow and compact analysis outputs needed for interpretation, reporting, and downstream manuscript development.
