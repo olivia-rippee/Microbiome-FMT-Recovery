@@ -1,0 +1,261 @@
+============================================================
+PHASE 13 — LONGITUDINAL COHORT STATISTICS
+============================================================
+
+Date:
+Wed Aug 26 15:31:42 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+------------------------------------------------------------
+PREPARING ALPHA-DIVERSITY METADATA
+------------------------------------------------------------
+Samples: 208
+Participants: 52
+
+Samples per timepoint:
+timepoint
+before    52
+7d        52
+14d       52
+30d       52
+
+------------------------------------------------------------
+PAIRED ALPHA-DIVERSITY TESTS
+------------------------------------------------------------
+
+Metric: observed_features
+  before vs 7d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_before_vs_7d.qzv
+  before vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_before_vs_14d.qzv
+  before vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_before_vs_30d.qzv
+  7d vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_7d_vs_14d.qzv
+  7d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_7d_vs_30d.qzv
+  14d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/observed_features_14d_vs_30d.qzv
+
+Metric: shannon
+  before vs 7d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_before_vs_7d.qzv
+  before vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_before_vs_14d.qzv
+  before vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_before_vs_30d.qzv
+  7d vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_7d_vs_14d.qzv
+  7d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_7d_vs_30d.qzv
+  14d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/shannon_14d_vs_30d.qzv
+
+Metric: faith_pd
+  before vs 7d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_before_vs_7d.qzv
+  before vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_before_vs_14d.qzv
+  before vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_before_vs_30d.qzv
+  7d vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_7d_vs_14d.qzv
+  7d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_7d_vs_30d.qzv
+  14d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/faith_pd_14d_vs_30d.qzv
+
+Metric: evenness
+  before vs 7d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_before_vs_7d.qzv
+  before vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_before_vs_14d.qzv
+  before vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_before_vs_30d.qzv
+  7d vs 14d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_7d_vs_14d.qzv
+  7d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_7d_vs_30d.qzv
+  14d vs 30d
+Saved Visualization to: results/phase13/alpha-pairwise/evenness_14d_vs_30d.qzv
+
+------------------------------------------------------------
+ALPHA-DIVERSITY LINEAR MIXED-EFFECTS MODELS
+------------------------------------------------------------
+
+Modeling: observed_features
+Saved Visualization to: results/phase13/alpha-lme/observed_features_lme.qzv
+
+Modeling: shannon
+Saved Visualization to: results/phase13/alpha-lme/shannon_lme.qzv
+
+Modeling: faith_pd
+Saved Visualization to: results/phase13/alpha-lme/faith_pd_lme.qzv
+
+Modeling: evenness
+Saved Visualization to: results/phase13/alpha-lme/evenness_lme.qzv
+
+------------------------------------------------------------
+BETA-DIVERSITY DISTANCE FROM BASELINE
+------------------------------------------------------------
+
+Metric: bray_curtis
+Saved SampleData[FirstDifferences] to: results/phase13/beta-first-distances/bray_curtis.qza
+Exported results/phase13/beta-first-distances/bray_curtis.qza as FirstDifferencesDirectoryFormat to directory results/phase13/beta-first-distances/bray_curtis-export
+
+Metric: jaccard
+Saved SampleData[FirstDifferences] to: results/phase13/beta-first-distances/jaccard.qza
+Exported results/phase13/beta-first-distances/jaccard.qza as FirstDifferencesDirectoryFormat to directory results/phase13/beta-first-distances/jaccard-export
+
+Metric: weighted_unifrac
+Saved SampleData[FirstDifferences] to: results/phase13/beta-first-distances/weighted_unifrac.qza
+Exported results/phase13/beta-first-distances/weighted_unifrac.qza as FirstDifferencesDirectoryFormat to directory results/phase13/beta-first-distances/weighted_unifrac-export
+
+Metric: unweighted_unifrac
+Saved SampleData[FirstDifferences] to: results/phase13/beta-first-distances/unweighted_unifrac.qza
+Exported results/phase13/beta-first-distances/unweighted_unifrac.qza as FirstDifferencesDirectoryFormat to directory results/phase13/beta-first-distances/unweighted_unifrac-export
+
+------------------------------------------------------------
+BETA-DIVERSITY LONGITUDINAL MODELS
+------------------------------------------------------------
+
+Modeling baseline displacement: bray_curtis
+Saved Visualization to: results/phase13/beta-lme/bray_curtis_lme.qzv
+
+Modeling baseline displacement: jaccard
+Saved Visualization to: results/phase13/beta-lme/jaccard_lme.qzv
+
+Modeling baseline displacement: weighted_unifrac
+Saved Visualization to: results/phase13/beta-lme/weighted_unifrac_lme.qzv
+
+Modeling baseline displacement: unweighted_unifrac
+Saved Visualization to: results/phase13/beta-lme/unweighted_unifrac_lme.qzv
+
+------------------------------------------------------------
+CALCULATING PAIRED STATISTICAL SUMMARY
+------------------------------------------------------------
+
+PAIRED ALPHA-DIVERSITY RESULTS
+
+           metric state_1 state_2  n_pairs  median_state_1  median_state_2  median_change   p_value q_value_bh  significant_fdr_0.05
+observed_features  before      7d       52          20.000          72.000         49.500 3.489e-10  7.400e-10                  True
+observed_features  before     14d       52          20.000          82.500         59.000 3.700e-10  7.400e-10                  True
+observed_features  before     30d       52          20.000          82.500         61.000 3.485e-10  7.400e-10                  True
+observed_features      7d     14d       52          72.000          82.500          5.000 5.117e-02  6.140e-02                 False
+observed_features      7d     30d       52          72.000          82.500          3.000 3.743e-02  5.615e-02                 False
+observed_features     14d     30d       52          82.500          82.500          3.500 7.360e-01  7.360e-01                 False
+          shannon  before      7d       52           2.402           4.190          1.790 4.175e-10  1.054e-09                  True
+          shannon  before     14d       52           2.402           4.545          2.162 5.268e-10  1.054e-09                  True
+          shannon  before     30d       52           2.402           4.400          2.175 3.504e-10  1.054e-09                  True
+          shannon      7d     14d       52           4.190           4.545          0.019 3.482e-01  3.482e-01                 False
+          shannon      7d     30d       52           4.190           4.400          0.188 1.834e-02  2.751e-02                  True
+          shannon     14d     30d       52           4.545           4.400          0.082 1.635e-01  1.962e-01                 False
+         faith_pd  before      7d       52           2.678           6.887          4.346 3.504e-10  7.008e-10                  True
+         faith_pd  before     14d       52           2.678           7.070          4.537 3.504e-10  7.008e-10                  True
+         faith_pd  before     30d       52           2.678           7.297          4.503 3.504e-10  7.008e-10                  True
+         faith_pd      7d     14d       52           6.887           7.070          0.387 1.466e-02  2.199e-02                  True
+         faith_pd      7d     30d       52           6.887           7.297          0.202 8.688e-02  1.043e-01                 False
+         faith_pd     14d     30d       52           7.070           7.297          0.015 8.698e-01  8.698e-01                 False
+         evenness  before      7d       52           0.560           0.686          0.141 1.719e-07  3.439e-07                  True
+         evenness  before     14d       52           0.560           0.708          0.144 1.343e-07  3.439e-07                  True
+         evenness  before     30d       52           0.560           0.714          0.172 1.176e-09  7.059e-09                  True
+         evenness      7d     14d       52           0.686           0.708          0.010 7.225e-01  7.225e-01                 False
+         evenness      7d     30d       52           0.686           0.714          0.016 5.131e-02  7.696e-02                 False
+         evenness     14d     30d       52           0.708           0.714          0.018 1.090e-01  1.308e-01                 False
+
+------------------------------------------------------------
+BETA BASELINE-DISTANCE STATISTICS
+------------------------------------------------------------
+
+PAIRED BETA-DISTANCE RESULTS
+
+            metric state_1 state_2  n_pairs  median_state_1  median_state_2  median_change   p_value q_value_bh  significant_fdr_0.05
+       bray_curtis      7d     14d       52           0.956           0.975          0.003 7.030e-02  1.068e-01                 False
+       bray_curtis      7d     30d       52           0.956           0.971          0.004 7.117e-02  1.068e-01                 False
+       bray_curtis     14d     30d       52           0.975           0.971          0.000 6.761e-01  6.761e-01                 False
+           jaccard      7d     14d       52           0.951           0.954          0.009 1.438e-03  2.157e-03                  True
+           jaccard      7d     30d       52           0.951           0.956          0.014 3.571e-04  1.071e-03                  True
+           jaccard     14d     30d       52           0.954           0.956          0.001 3.783e-01  3.783e-01                 False
+  weighted_unifrac      7d     14d       52           0.451           0.465          0.007 7.089e-01  9.130e-01                 False
+  weighted_unifrac      7d     30d       52           0.451           0.466         -0.011 9.130e-01  9.130e-01                 False
+  weighted_unifrac     14d     30d       52           0.465           0.466          0.002 7.638e-01  9.130e-01                 False
+unweighted_unifrac      7d     14d       52           0.761           0.782          0.016 1.786e-03  5.358e-03                  True
+unweighted_unifrac      7d     30d       52           0.761           0.772          0.018 1.621e-02  2.431e-02                  True
+unweighted_unifrac     14d     30d       52           0.782           0.772         -0.014 3.621e-02  3.621e-02                  True
+
+------------------------------------------------------------
+PHASE 13 OUTPUTS
+------------------------------------------------------------
+results/phase13/alpha-lme/evenness_lme.qzv
+results/phase13/alpha-lme/faith_pd_lme.qzv
+results/phase13/alpha-lme/observed_features_lme.qzv
+results/phase13/alpha-lme/shannon_lme.qzv
+results/phase13/alpha-metadata.tsv
+results/phase13/alpha-pairwise/evenness_14d_vs_30d.qzv
+results/phase13/alpha-pairwise/evenness_7d_vs_14d.qzv
+results/phase13/alpha-pairwise/evenness_7d_vs_30d.qzv
+results/phase13/alpha-pairwise/evenness_before_vs_14d.qzv
+results/phase13/alpha-pairwise/evenness_before_vs_30d.qzv
+results/phase13/alpha-pairwise/evenness_before_vs_7d.qzv
+results/phase13/alpha-pairwise/faith_pd_14d_vs_30d.qzv
+results/phase13/alpha-pairwise/faith_pd_7d_vs_14d.qzv
+results/phase13/alpha-pairwise/faith_pd_7d_vs_30d.qzv
+results/phase13/alpha-pairwise/faith_pd_before_vs_14d.qzv
+results/phase13/alpha-pairwise/faith_pd_before_vs_30d.qzv
+results/phase13/alpha-pairwise/faith_pd_before_vs_7d.qzv
+results/phase13/alpha-pairwise/observed_features_14d_vs_30d.qzv
+results/phase13/alpha-pairwise/observed_features_7d_vs_14d.qzv
+results/phase13/alpha-pairwise/observed_features_7d_vs_30d.qzv
+results/phase13/alpha-pairwise/observed_features_before_vs_14d.qzv
+results/phase13/alpha-pairwise/observed_features_before_vs_30d.qzv
+results/phase13/alpha-pairwise/observed_features_before_vs_7d.qzv
+results/phase13/alpha-pairwise/shannon_14d_vs_30d.qzv
+results/phase13/alpha-pairwise/shannon_7d_vs_14d.qzv
+results/phase13/alpha-pairwise/shannon_7d_vs_30d.qzv
+results/phase13/alpha-pairwise/shannon_before_vs_14d.qzv
+results/phase13/alpha-pairwise/shannon_before_vs_30d.qzv
+results/phase13/alpha-pairwise/shannon_before_vs_7d.qzv
+results/phase13/beta-first-distances/bray_curtis-export/FirstDifferences.tsv
+results/phase13/beta-first-distances/bray_curtis.qza
+results/phase13/beta-first-distances/jaccard-export/FirstDifferences.tsv
+results/phase13/beta-first-distances/jaccard.qza
+results/phase13/beta-first-distances/unweighted_unifrac-export/FirstDifferences.tsv
+results/phase13/beta-first-distances/unweighted_unifrac.qza
+results/phase13/beta-first-distances/weighted_unifrac-export/FirstDifferences.tsv
+results/phase13/beta-first-distances/weighted_unifrac.qza
+results/phase13/beta-lme/bray_curtis_lme.qzv
+results/phase13/beta-lme/jaccard_lme.qzv
+results/phase13/beta-lme/unweighted_unifrac_lme.qzv
+results/phase13/beta-lme/weighted_unifrac_lme.qzv
+results/phase13/tables/alpha_pairwise_statistics.tsv
+results/phase13/tables/beta_baseline_distance_statistics.tsv
+
+============================================================
+PHASE 13 CONCLUSION
+============================================================
+
+Repeated-measures longitudinal statistical analyses were
+performed across the complete 52-participant FMT cohort.
+
+Alpha-diversity changes were evaluated using paired
+non-parametric tests and participant-level mixed-effects
+models.
+
+Benjamini-Hochberg correction was applied across the six
+pairwise timepoint comparisons within each alpha metric.
+
+Beta-diversity displacement was calculated relative to
+each participant's own pre-FMT baseline.
+
+Post-FMT baseline distances were compared across 7-, 14-,
+and 30-day timepoints using paired longitudinal tests.
+
+These analyses account for the repeated-measures structure
+of the longitudinal cohort.
+
+============================================================
+END PHASE 13
+============================================================
