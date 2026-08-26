@@ -44,3 +44,12 @@ Thumbs.db
 *.tmp
 *.temp
 *.log
+
+# Cohort analysis intermediate exports
+results/phase10/*-export/
+results/phase12/alpha-export/
+results/phase12/beta-export/
+results/phase13/alpha-metadata.tsv
+results/phase13/beta-first-distances/
+results/phase14/genus/
+results/phase14/family/

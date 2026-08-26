@@ -1,0 +1,69 @@
+================================================================================
+PHASE 15 — DIFFERENTIAL TAXA VISUALIZATION
+================================================================================
+
+ANCOM-BC result rows: 339
+Persistence rows: 80
+
+Genera significant at all three post-FMT timepoints: 70
+
+------------------------------------------------------------
+TOP PERSISTENT INCREASES
+------------------------------------------------------------
+             label  mean_lfc         min_q
+           Blautia  5.762732 4.711020e-124
+       Bacteroides  5.668805  1.140710e-74
+   Lachnospiraceae  5.575773 7.221777e-182
+             Dorea  4.565697  3.938768e-93
+      Anaerostipes  3.841184  5.986734e-52
+  Faecalibacterium  3.691077  3.180095e-37
+Mediterraneibacter  3.689244  7.547766e-56
+   Anaerobutyricum  3.539466  2.654998e-31
+   Bifidobacterium  3.303784  1.974724e-23
+      Agathobacter  3.165047  8.156093e-26
+
+------------------------------------------------------------
+TOP PERSISTENT DECREASES
+------------------------------------------------------------
+               label  mean_lfc         min_q
+  Enterobacteriaceae -7.532919 7.739454e-124
+  Lacticaseibacillus -4.744253  2.516436e-47
+         Veillonella -4.217982  4.180841e-35
+ Lactiplantibacillus -3.861472  9.482392e-35
+   Ligilactobacillus -3.012777  1.956936e-15
+Escherichia-Shigella -2.445729  3.854946e-10
+         Pediococcus -2.168286  2.004577e-16
+         Megasphaera -2.017769  1.326687e-13
+             Proteus -1.579625  1.178869e-12
+       Fusobacterium -1.504451  2.990276e-06
+
+============================================================
+PHASE 15 OUTPUTS
+============================================================
+results/phase15/figures/genus_lfc_by_timepoint.png
+results/phase15/figures/persistent_genera_heatmap.png
+results/phase15/figures/top_persistent_differential_genera.png
+results/phase15/tables/selected_genus_lfc_matrix.tsv
+results/phase15/tables/top_persistent_genera.tsv
+
+============================================================
+PHASE 15 CONCLUSION
+============================================================
+
+Genus-level ANCOM-BC results were summarized across the
+three post-FMT timepoints.
+
+Taxa that were significantly different from pre-FMT
+baseline at all three timepoints were identified as
+persistent differential genera.
+
+The strongest persistent increases and decreases were
+visualized using mean log-fold change, timepoint-specific
+log-fold changes, and a heatmap.
+
+These figures summarize sustained taxonomic restructuring
+following FMT across the 52-participant longitudinal cohort.
+
+================================================================================
+END PHASE 15
+================================================================================

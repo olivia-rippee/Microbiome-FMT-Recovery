@@ -1,0 +1,118 @@
+================================================================================
+PHASE 16 — INTEGRATED COHORT SUMMARY
+================================================================================
+
+------------------------------------------------------------
+COHORT OVERVIEW
+------------------------------------------------------------
+Participants: 52
+Samples: 208
+Median non-chimeric read retention: 61.78%
+Retention range: 32.49%–80.26%
+
+------------------------------------------------------------
+ALPHA DIVERSITY MEDIANS
+------------------------------------------------------------
+           observed_features  shannon  faith_pd  evenness
+timepoint                                                
+before                20.000    2.402     2.678     0.560
+7d                    72.000    4.190     6.887     0.686
+14d                   82.500    4.545     7.070     0.708
+30d                   82.500    4.400     7.297     0.714
+
+------------------------------------------------------------
+DISTANCE FROM BASELINE MEDIANS
+------------------------------------------------------------
+           bray_curtis  jaccard  weighted_unifrac  unweighted_unifrac
+timepoint                                                            
+7d               0.956    0.951             0.451               0.761
+14d              0.975    0.954             0.465               0.782
+30d              0.971    0.956             0.466               0.772
+
+------------------------------------------------------------
+PERSISTENT DIFFERENTIAL GENERA
+------------------------------------------------------------
+Genera significant at all three post-FMT timepoints: 70
+Persistent increases: 52
+Persistent decreases: 18
+
+------------------------------------------------------------
+STATISTICAL SUMMARY
+------------------------------------------------------------
+Significant baseline-vs-post alpha contrasts: 12/12
+Significant post-FMT beta-distance contrasts: 5/12
+
+------------------------------------------------------------
+KEY COHORT FINDINGS
+------------------------------------------------------------
+Participants: 52
+Samples analyzed: 208
+Median DADA2 non-chimeric retention: 61.78%
+
+Observed features:
+  before: 20.0
+      7d: 72.0
+     14d: 82.5
+     30d: 82.5
+
+Shannon diversity:
+  before: 2.402
+      7d: 4.190
+     14d: 4.545
+     30d: 4.400
+
+Faith PD:
+  before: 2.678
+      7d: 6.887
+     14d: 7.070
+     30d: 7.297
+
+Median Bray-Curtis distance from baseline:
+      7d: 0.956
+     14d: 0.975
+     30d: 0.971
+
+Median weighted UniFrac distance from baseline:
+      7d: 0.451
+     14d: 0.465
+     30d: 0.466
+
+Persistent significant genera: 70
+Persistent increased genera: 52
+Persistent decreased genera: 18
+
+============================================================
+PHASE 16 OUTPUTS
+============================================================
+results/phase16/figures/alpha_diversity_summary.png
+results/phase16/figures/beta_distance_from_baseline.png
+results/phase16/figures/integrated_cohort_summary.png
+results/phase16/figures/sequencing_retention_summary.png
+results/phase16/figures/top_persistent_genera.png
+results/phase16/tables/cohort_key_results.tsv
+
+============================================================
+PHASE 16 CONCLUSION
+============================================================
+
+The cohort-level analysis was integrated across sequencing
+quality, alpha diversity, beta diversity, longitudinal
+statistics, and differential abundance.
+
+Across 52 participants and 208 longitudinal samples, FMT
+was associated with a rapid increase in microbial richness,
+Shannon diversity, phylogenetic diversity, and evenness.
+
+Post-FMT communities remained strongly displaced from each
+participant's pre-FMT baseline through day 30.
+
+ANCOM-BC identified numerous genera with persistent
+post-FMT increases or decreases across all three measured
+post-FMT timepoints.
+
+Together, these results support rapid and sustained
+restructuring of the gut microbial community following FMT.
+
+================================================================================
+END PHASE 16
+================================================================================

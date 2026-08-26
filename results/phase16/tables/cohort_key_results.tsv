@@ -1,0 +1,35 @@
+category	metric	timepoint	value	note
+cohort	participants	all	52.0	Complete four-timepoint recipient cohort
+cohort	samples	all	208.0	52 participants × 4 timepoints
+sequencing_qc	median_non_chimeric_retention_percent	all	61.775	Median DADA2 non-chimeric read retention
+alpha_diversity	observed_features	before	20.0	Median across participants
+alpha_diversity	shannon	before	2.40241	Median across participants
+alpha_diversity	faith_pd	before	2.677621	Median across participants
+alpha_diversity	evenness	before	0.560096	Median across participants
+alpha_diversity	observed_features	7d	72.0	Median across participants
+alpha_diversity	shannon	7d	4.190408	Median across participants
+alpha_diversity	faith_pd	7d	6.887476	Median across participants
+alpha_diversity	evenness	7d	0.685997	Median across participants
+alpha_diversity	observed_features	14d	82.5	Median across participants
+alpha_diversity	shannon	14d	4.545157	Median across participants
+alpha_diversity	faith_pd	14d	7.070482	Median across participants
+alpha_diversity	evenness	14d	0.708063	Median across participants
+alpha_diversity	observed_features	30d	82.5	Median across participants
+alpha_diversity	shannon	30d	4.399915	Median across participants
+alpha_diversity	faith_pd	30d	7.297077	Median across participants
+alpha_diversity	evenness	30d	0.713592	Median across participants
+beta_diversity	bray_curtis	7d	0.956267	Median distance from participant-specific pre-FMT baseline
+beta_diversity	jaccard	7d	0.950816	Median distance from participant-specific pre-FMT baseline
+beta_diversity	weighted_unifrac	7d	0.45094	Median distance from participant-specific pre-FMT baseline
+beta_diversity	unweighted_unifrac	7d	0.760866	Median distance from participant-specific pre-FMT baseline
+beta_diversity	bray_curtis	14d	0.975133	Median distance from participant-specific pre-FMT baseline
+beta_diversity	jaccard	14d	0.95357	Median distance from participant-specific pre-FMT baseline
+beta_diversity	weighted_unifrac	14d	0.464996	Median distance from participant-specific pre-FMT baseline
+beta_diversity	unweighted_unifrac	14d	0.781986	Median distance from participant-specific pre-FMT baseline
+beta_diversity	bray_curtis	30d	0.9714	Median distance from participant-specific pre-FMT baseline
+beta_diversity	jaccard	30d	0.956137	Median distance from participant-specific pre-FMT baseline
+beta_diversity	weighted_unifrac	30d	0.466477	Median distance from participant-specific pre-FMT baseline
+beta_diversity	unweighted_unifrac	30d	0.771951	Median distance from participant-specific pre-FMT baseline
+differential_abundance	persistent_significant_genera	7d_14d_30d	70.0	Significant at all three post-FMT timepoints
+differential_abundance	persistent_increased_genera	7d_14d_30d	52.0	Significant persistent increases
+differential_abundance	persistent_decreased_genera	7d_14d_30d	18.0	Significant persistent decreases
