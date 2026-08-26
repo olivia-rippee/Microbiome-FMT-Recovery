@@ -1,3 +1,6 @@
+================================================================================
+PHASE 14 — ANCOM-BC RESULT SUMMARY
+================================================================================
 
 ================================================================================
 GENUS
@@ -6,8 +9,8 @@ GENUS
 --------------------------------------------------------------------------------
 7d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       113
-Significant taxa:  73
+Taxa tested:      113
+Significant taxa: 73
 
                                                                                                                         taxon       lfc       p_value       q_value direction
                                                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.521617 1.075556e-163 1.215378e-161 increased
@@ -87,8 +90,8 @@ d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f_
 --------------------------------------------------------------------------------
 14d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       113
-Significant taxa:  73
+Taxa tested:      113
+Significant taxa: 73
 
                                                                                                                         taxon       lfc       p_value       q_value direction
                                                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.477351 2.589362e-176 2.925979e-174 increased
@@ -168,8 +171,8 @@ d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f_
 --------------------------------------------------------------------------------
 30d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       113
-Significant taxa:  76
+Taxa tested:      113
+Significant taxa: 76
 
                                                                                                                           taxon       lfc       p_value       q_value direction
                                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.728350 6.390953e-184 7.221777e-182 increased
@@ -333,8 +336,8 @@ FAMILY
 --------------------------------------------------------------------------------
 7d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       42
-Significant taxa:  31
+Taxa tested:      42
+Significant taxa: 31
 
                                                                                                   taxon       lfc       p_value       q_value direction
                             d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae  6.744000 5.288420e-162 2.221137e-160 increased
@@ -372,8 +375,8 @@ d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales
 --------------------------------------------------------------------------------
 14d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       42
-Significant taxa:  31
+Taxa tested:      42
+Significant taxa: 31
 
                                                                                                  taxon       lfc       p_value       q_value direction
                           d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae  5.751316 1.188710e-166 4.992580e-165 increased
@@ -411,8 +414,8 @@ d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f_
 --------------------------------------------------------------------------------
 30d_vs_before
 --------------------------------------------------------------------------------
-Taxa tested:       42
-Significant taxa:  38
+Taxa tested:      42
+Significant taxa: 38
 
                                                                                                  taxon       lfc       p_value       q_value direction
                            d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae  5.743736 3.406946e-125 1.430917e-123 increased
@@ -502,3 +505,7 @@ results/phase14/tables/family_ancombc_significant.tsv
 results/phase14/tables/genus_ancombc_all_results.tsv
 results/phase14/tables/genus_ancombc_persistence.tsv
 results/phase14/tables/genus_ancombc_significant.tsv
+
+================================================================================
+END PHASE 14 ANCOM-BC SUMMARY
+================================================================================

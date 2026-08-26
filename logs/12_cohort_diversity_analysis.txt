@@ -1,0 +1,160 @@
+============================================================
+PHASE 12 — COHORT ALPHA AND BETA DIVERSITY ANALYSIS
+============================================================
+
+Date:
+Wed Aug 26 15:03:20 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+Sampling depth:
+7500
+
+Samples:
+208
+
+------------------------------------------------------------
+PHYLOGENETIC TREE
+------------------------------------------------------------
+Saved FeatureData[AlignedSequence] to: results/phase12/aligned-rep-seqs.qza
+Saved FeatureData[AlignedSequence] to: results/phase12/masked-aligned-rep-seqs.qza
+Saved Phylogeny[Unrooted] to: results/phase12/unrooted-tree.qza
+Saved Phylogeny[Rooted] to: results/phase12/rooted-tree.qza
+
+------------------------------------------------------------
+CORE DIVERSITY METRICS
+------------------------------------------------------------
+Saved FeatureTable[Frequency] to: results/phase12/core-metrics/rarefied_table.qza
+Saved SampleData[AlphaDiversity] to: results/phase12/core-metrics/faith_pd_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase12/core-metrics/observed_features_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase12/core-metrics/shannon_vector.qza
+Saved SampleData[AlphaDiversity] to: results/phase12/core-metrics/evenness_vector.qza
+Saved DistanceMatrix to: results/phase12/core-metrics/unweighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: results/phase12/core-metrics/weighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: results/phase12/core-metrics/jaccard_distance_matrix.qza
+Saved DistanceMatrix to: results/phase12/core-metrics/bray_curtis_distance_matrix.qza
+Saved PCoAResults to: results/phase12/core-metrics/unweighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: results/phase12/core-metrics/weighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: results/phase12/core-metrics/jaccard_pcoa_results.qza
+Saved PCoAResults to: results/phase12/core-metrics/bray_curtis_pcoa_results.qza
+Saved Visualization to: results/phase12/core-metrics/unweighted_unifrac_emperor.qzv
+Saved Visualization to: results/phase12/core-metrics/weighted_unifrac_emperor.qzv
+Saved Visualization to: results/phase12/core-metrics/jaccard_emperor.qzv
+Saved Visualization to: results/phase12/core-metrics/bray_curtis_emperor.qzv
+
+------------------------------------------------------------
+EXPORTING ALPHA DIVERSITY
+------------------------------------------------------------
+Exported results/phase12/core-metrics/observed_features_vector.qza as AlphaDiversityDirectoryFormat to directory results/phase12/alpha-export/observed-features
+Exported results/phase12/core-metrics/shannon_vector.qza as AlphaDiversityDirectoryFormat to directory results/phase12/alpha-export/shannon
+Exported results/phase12/core-metrics/faith_pd_vector.qza as AlphaDiversityDirectoryFormat to directory results/phase12/alpha-export/faith-pd
+Exported results/phase12/core-metrics/evenness_vector.qza as AlphaDiversityDirectoryFormat to directory results/phase12/alpha-export/evenness
+
+------------------------------------------------------------
+EXPORTING BETA DIVERSITY
+------------------------------------------------------------
+Exported results/phase12/core-metrics/bray_curtis_distance_matrix.qza as DistanceMatrixDirectoryFormat to directory results/phase12/beta-export/bray-curtis
+Exported results/phase12/core-metrics/jaccard_distance_matrix.qza as DistanceMatrixDirectoryFormat to directory results/phase12/beta-export/jaccard
+Exported results/phase12/core-metrics/weighted_unifrac_distance_matrix.qza as DistanceMatrixDirectoryFormat to directory results/phase12/beta-export/weighted-unifrac
+Exported results/phase12/core-metrics/unweighted_unifrac_distance_matrix.qza as DistanceMatrixDirectoryFormat to directory results/phase12/beta-export/unweighted-unifrac
+
+------------------------------------------------------------
+ALPHA RAREFACTION
+------------------------------------------------------------
+Saved Visualization to: results/phase12/alpha-rarefaction.qzv
+
+------------------------------------------------------------
+COHORT ALPHA DIVERSITY SUMMARY
+------------------------------------------------------------
+Alpha-diversity samples: 208
+
+Samples per timepoint:
+timepoint
+before    52
+7d        52
+14d       52
+30d       52
+
+Median alpha diversity by timepoint:
+           observed_features  shannon  faith_pd  evenness
+timepoint                                                
+before                20.000    2.402     2.678     0.560
+7d                    72.000    4.190     6.887     0.686
+14d                   82.500    4.545     7.070     0.708
+30d                   82.500    4.400     7.297     0.714
+
+------------------------------------------------------------
+WITHIN-PARTICIPANT DISTANCE FROM BASELINE
+------------------------------------------------------------
+Baseline-to-post-FMT comparisons: 156
+
+Median distance from baseline:
+           bray_curtis  jaccard  weighted_unifrac  unweighted_unifrac
+timepoint                                                            
+7d               0.956    0.951             0.451               0.761
+14d              0.975    0.954             0.465               0.782
+30d              0.971    0.956             0.466               0.772
+
+------------------------------------------------------------
+PHASE 12 OUTPUTS
+------------------------------------------------------------
+results/phase12/aligned-rep-seqs.qza
+results/phase12/alpha-diversity-summary.tsv
+results/phase12/alpha-export/evenness/alpha-diversity.tsv
+results/phase12/alpha-export/faith-pd/alpha-diversity.tsv
+results/phase12/alpha-export/observed-features/alpha-diversity.tsv
+results/phase12/alpha-export/shannon/alpha-diversity.tsv
+results/phase12/alpha-rarefaction.qzv
+results/phase12/beta-export/bray-curtis/distance-matrix.tsv
+results/phase12/beta-export/jaccard/distance-matrix.tsv
+results/phase12/beta-export/unweighted-unifrac/distance-matrix.tsv
+results/phase12/beta-export/weighted-unifrac/distance-matrix.tsv
+results/phase12/core-metrics/bray_curtis_distance_matrix.qza
+results/phase12/core-metrics/bray_curtis_emperor.qzv
+results/phase12/core-metrics/bray_curtis_pcoa_results.qza
+results/phase12/core-metrics/evenness_vector.qza
+results/phase12/core-metrics/faith_pd_vector.qza
+results/phase12/core-metrics/jaccard_distance_matrix.qza
+results/phase12/core-metrics/jaccard_emperor.qzv
+results/phase12/core-metrics/jaccard_pcoa_results.qza
+results/phase12/core-metrics/observed_features_vector.qza
+results/phase12/core-metrics/rarefied_table.qza
+results/phase12/core-metrics/shannon_vector.qza
+results/phase12/core-metrics/unweighted_unifrac_distance_matrix.qza
+results/phase12/core-metrics/unweighted_unifrac_emperor.qzv
+results/phase12/core-metrics/unweighted_unifrac_pcoa_results.qza
+results/phase12/core-metrics/weighted_unifrac_distance_matrix.qza
+results/phase12/core-metrics/weighted_unifrac_emperor.qzv
+results/phase12/core-metrics/weighted_unifrac_pcoa_results.qza
+results/phase12/distance-from-baseline.tsv
+results/phase12/masked-aligned-rep-seqs.qza
+results/phase12/rooted-tree.qza
+results/phase12/unrooted-tree.qza
+
+============================================================
+PHASE 12 CONCLUSION
+============================================================
+
+Cohort-wide alpha and beta diversity metrics were calculated
+after rarefaction to 7,500 reads per sample.
+
+This sampling depth retained all 208 samples and all 52
+participants with complete four-timepoint longitudinal data.
+
+Alpha diversity included observed features, Shannon
+diversity, Faith's phylogenetic diversity, and evenness.
+
+Beta diversity included Bray-Curtis, Jaccard, weighted
+UniFrac, and unweighted UniFrac distances.
+
+Within-participant distances from each recipient's own
+pre-FMT baseline were calculated for 7d, 14d, and 30d.
+
+These outputs are ready for repeated-measures cohort-level
+statistical analysis.
+
+============================================================
+END PHASE 12
+============================================================
