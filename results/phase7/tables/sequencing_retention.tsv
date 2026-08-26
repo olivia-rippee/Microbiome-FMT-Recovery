@@ -1,0 +1,5 @@
+timepoint	input	filtered	denoised	merged	non-chimeric	percentage of input non-chimeric
+Before	37985	31588	30837	27445	21636	56.96
+7 days	40010	21694	21246	19200	15599	38.99
+14 days	30280	23895	23479	21596	18849	62.25
+30 days	42129	24182	23718	21257	19484	46.25

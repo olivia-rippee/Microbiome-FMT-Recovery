@@ -1,0 +1,94 @@
+============================================================
+PHASE 7 — INTEGRATED PILOT SUMMARY
+============================================================
+
+Loading sequencing-retention statistics...
+Loading alpha-diversity results...
+Loading beta-diversity results...
+Loading dominant-genus results...
+
+------------------------------------------------------------
+SEQUENCING RETENTION
+------------------------------------------------------------
+           percentage of input non-chimeric
+timepoint                                  
+Before                                56.96
+7 days                                38.99
+14 days                               62.25
+30 days                               46.25
+
+------------------------------------------------------------
+ALPHA DIVERSITY
+------------------------------------------------------------
+           observed_features  shannon  faith_pd
+timepoint                                      
+Before                    93    4.901     7.142
+7 days                    62    4.607     5.564
+14 days                   59    4.251     5.051
+30 days                   68    4.593     5.231
+
+------------------------------------------------------------
+DISTANCE FROM PRE-FMT BASELINE
+------------------------------------------------------------
+timepoint  bray_curtis_vs_before  weighted_unifrac_vs_before
+   7 days                  0.828                       0.224
+  14 days                  0.856                       0.285
+  30 days                  0.822                       0.289
+
+------------------------------------------------------------
+DOMINANT GENERA (%)
+------------------------------------------------------------
+               Genus  Before  7 days  14 days  30 days
+         Bacteroides   48.76   46.07    38.99    32.16
+     Bifidobacterium    0.04   14.25    14.23     7.37
+     Lachnospiraceae    3.76    2.98    14.20    14.75
+             Blautia    2.73    4.71    14.85    11.90
+    Faecalibacterium    2.10    7.37     0.54     8.81
+      Incertae_Sedis    8.99    0.00     0.00     0.00
+         Akkermansia    8.21    0.00     0.00     0.00
+        Anaerostipes    1.56    1.02     1.84     3.21
+Escherichia-Shigella    0.00    1.96     4.81     0.29
+      Parasutterella    0.08    1.16     0.34     4.04
+               Dorea    0.41    2.29     1.05     1.27
+          Tyzzerella    0.00    3.46     0.36     0.99
+
+============================================================
+PHASE 7 OUTPUTS
+============================================================
+results/phase7/figures/bray_curtis_from_baseline.png
+results/phase7/figures/dominant_genera_summary.png
+results/phase7/figures/faith_pd_trajectory.png
+results/phase7/figures/observed_features_trajectory.png
+results/phase7/figures/sequencing_retention.png
+results/phase7/figures/shannon_trajectory.png
+results/phase7/figures/weighted_unifrac_from_baseline.png
+results/phase7/tables/alpha_diversity_summary.tsv
+results/phase7/tables/distance_from_baseline.tsv
+results/phase7/tables/dominant_genera_percent.tsv
+results/phase7/tables/sequencing_retention.tsv
+
+============================================================
+PHASE 7 CONCLUSION
+============================================================
+
+The R009 pilot workflow was integrated across sequencing
+quality, alpha diversity, beta diversity, and taxonomic
+composition.
+
+Post-FMT samples showed reduced richness and phylogenetic
+diversity relative to the pre-FMT sample.
+
+Post-FMT communities remained compositionally distinct
+from the pre-FMT baseline across the observed time course.
+
+Taxonomic analysis identified substantial longitudinal
+changes among dominant bacterial genera.
+
+Because the pilot consists of a single participant, these
+patterns are interpreted descriptively and are intended to
+validate the computational workflow before expansion to a
+larger longitudinal cohort.
+
+============================================================
+END PHASE 7
+============================================================
