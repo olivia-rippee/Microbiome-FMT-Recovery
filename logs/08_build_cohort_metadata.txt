@@ -1,0 +1,163 @@
+========================================================================
+PHASE 8 — BUILD LONGITUDINAL COHORT
+========================================================================
+
+Reading:
+  data/cohort/PRJNA298590_metadata.tsv
+
+Total SRA runs: 271
+Unique BioSamples: 271
+Paired-end runs retained: 271
+
+Runs with participant + recognized timepoint: 216
+Participants detected: 53
+Runs not assigned to the recipient cohort: 55
+Donor/non-recipient records detected: 54
+
+Duplicate participant/timepoint combinations: 4
+
+========================================================================
+COMPLETE LONGITUDINAL COHORT
+========================================================================
+
+Participants with exactly one before + 7d + 14d + 30d run: 52
+
+timepoint    before  7d  14d  30d
+participant                      
+R001              1   1    1    1
+R002              1   1    1    1
+R003              1   1    1    1
+R004              1   1    1    1
+R005              1   1    1    1
+R006              1   1    1    1
+R008              1   1    1    1
+R009              1   1    1    1
+R010              1   1    1    1
+R011              1   1    1    1
+R012              1   1    1    1
+R013              1   1    1    1
+R014              1   1    1    1
+R015              1   1    1    1
+R016              1   1    1    1
+R017              1   1    1    1
+R018              1   1    1    1
+R019              1   1    1    1
+R020              1   1    1    1
+R021              1   1    1    1
+R022              1   1    1    1
+R023              1   1    1    1
+R024              1   1    1    1
+R025              1   1    1    1
+R026              1   1    1    1
+R027              1   1    1    1
+R028              1   1    1    1
+R030              1   1    1    1
+R032              1   1    1    1
+R033              1   1    1    1
+R034              1   1    1    1
+R035              1   1    1    1
+R036              1   1    1    1
+R037              1   1    1    1
+R038              1   1    1    1
+R041              1   1    1    1
+R042              1   1    1    1
+R043              1   1    1    1
+R044              1   1    1    1
+R045              1   1    1    1
+R047              1   1    1    1
+R048              1   1    1    1
+R051              1   1    1    1
+R053              1   1    1    1
+R054              1   1    1    1
+R055              1   1    1    1
+R056              1   1    1    1
+R057              1   1    1    1
+R058              1   1    1    1
+R059              1   1    1    1
+R062              1   1    1    1
+R063              1   1    1    1
+
+Cohort rows missing paired ENA URLs: 0
+
+========================================================================
+COHORT SUMMARY
+========================================================================
+
+Complete participants: 52
+Cohort runs: 208
+Expected cohort runs: 208
+Runs retained for manual review / donor analysis: 55
+Donor/non-recipient records: 54
+Duplicate participant/timepoint combinations: 4
+
+Selected cohort examples:
+  sample-id run_accession    biosample
+R001_before    SRR2658150 SAMN04161270
+    R001_7d    SRR2658076 SAMN04161261
+   R001_14d    SRR2658043 SAMN04161245
+   R001_30d    SRR2658050 SAMN04161252
+R002_before    SRR2657970 SAMN04161298
+    R002_7d    SRR2658175 SAMN04161293
+   R002_14d    SRR2658158 SAMN04161277
+   R002_30d    SRR2658166 SAMN04161284
+R003_before    SRR2657972 SAMN04161300
+    R003_7d    SRR2657974 SAMN04161302
+   R003_14d    SRR2657973 SAMN04161301
+   R003_30d    SRR2657971 SAMN04161299
+R004_before    SRR2657979 SAMN04161306
+    R004_7d    SRR2657978 SAMN04161305
+   R004_14d    SRR2657975 SAMN04161303
+   R004_30d    SRR2657977 SAMN04161304
+R005_before    SRR2657983 SAMN04161310
+    R005_7d    SRR2657982 SAMN04161309
+   R005_14d    SRR2657980 SAMN04161307
+   R005_30d    SRR2657981 SAMN04161308
+R006_before    SRR2657988 SAMN04161314
+    R006_7d    SRR2657986 SAMN04161313
+   R006_14d    SRR2657984 SAMN04161311
+   R006_30d    SRR2657985 SAMN04161312
+
+========================================================================
+OUTPUTS
+========================================================================
+data/cohort/PRJNA298590_parsed_metadata.tsv
+data/cohort/PRJNA298590_participant_inventory.tsv
+data/cohort/PRJNA298590_complete_participants.tsv
+data/cohort/PRJNA298590_complete_cohort_runs.tsv
+data/cohort/PRJNA298590_unparsed_runs.tsv
+data/cohort/PRJNA298590_duplicate_timepoints.tsv
+data/cohort/PRJNA298590_cohort_download_manifest.tsv
+
+========================================================================
+PHASE 8 CONCLUSION
+========================================================================
+
+PRJNA298590 SRA metadata were parsed to identify recipient
+IDs and standardized FMT timepoints.
+
+Only paired-end sequencing runs were considered.
+
+Compact sample names were parsed by identifying and removing
+the timepoint suffix before extracting the participant ID.
+
+Participants were retained only when exactly one sequencing
+run was available for each required timepoint:
+
+Before FMT
+7 days after FMT
+14 days after FMT
+30 days after FMT
+
+Donor records were kept outside the recipient longitudinal
+cohort and retained for possible future donor-recipient
+engraftment analyses.
+
+Duplicate and otherwise unassigned records were preserved
+for manual review rather than silently discarded.
+
+A validated cohort download manifest was generated for the
+next stage of multi-participant processing.
+
+========================================================================
+END PHASE 8
+========================================================================
