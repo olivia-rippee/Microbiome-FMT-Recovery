@@ -1,0 +1,68 @@
+============================================================
+PHASE 6 — LONGITUDINAL TAXONOMIC CHANGE
+============================================================
+
+Loading Phase 5 relative-abundance tables...
+Genus-level rows: 82
+Phylum-level rows: 8
+
+Detected sample columns:
+  R009_before
+  R009_7d
+  R009_14d
+  R009_30d
+
+Top genera by mean relative abundance (%):
+               Genus  R009_before  R009_7d  R009_14d  R009_30d  mean_relative_abundance
+         Bacteroides        48.76    46.07     38.99     32.16                    41.50
+     Bifidobacterium         0.04    14.25     14.23      7.37                     8.97
+     Lachnospiraceae         3.76     2.98     14.20     14.75                     8.92
+             Blautia         2.73     4.71     14.85     11.90                     8.55
+    Faecalibacterium         2.10     7.37      0.54      8.81                     4.71
+      Incertae_Sedis         8.99     0.00      0.00      0.00                     2.25
+         Akkermansia         8.21     0.00      0.00      0.00                     2.05
+        Anaerostipes         1.56     1.02      1.84      3.21                     1.91
+Escherichia-Shigella         0.00     1.96      4.81      0.29                     1.76
+      Parasutterella         0.08     1.16      0.34      4.04                     1.41
+               Dorea         0.41     2.29      1.05      1.27                     1.26
+          Tyzzerella         0.00     3.46      0.36      0.99                     1.20
+
+============================================================
+PHASE 6 OUTPUTS
+============================================================
+results/phase6/figures/phylum_relative_abundance.png
+results/phase6/figures/top_genera_heatmap.png
+results/phase6/figures/top_genera_relative_abundance.png
+results/phase6/figures/top_genera_trajectories.png
+results/phase6/tables/genus_baseline_changes.tsv
+results/phase6/tables/genus_relative_abundance_ranked.tsv
+results/phase6/tables/phylum_relative_abundance.tsv
+results/phase6/tables/top_genera_relative_abundance.tsv
+
+============================================================
+PHASE 6 CONCLUSION
+============================================================
+
+Longitudinal taxonomic composition was summarized across
+the four R009 FMT timepoints.
+
+The original BIOM-exported sample labels were preserved and
+then explicitly reordered as Before, 7 days, 14 days, and
+30 days for longitudinal analysis.
+
+Genera were ranked by mean relative abundance across the
+entire time course.
+
+Baseline-to-post-FMT abundance changes were calculated for
+7-, 14-, and 30-day samples.
+
+Phylum composition, dominant-genus composition, genus
+trajectories, and a taxonomic heatmap were generated.
+
+Because this pilot contains only one participant, these
+results represent descriptive longitudinal changes rather
+than population-level differential-abundance inference.
+
+============================================================
+END PHASE 6
+============================================================
