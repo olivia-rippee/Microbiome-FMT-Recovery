@@ -1,0 +1,103 @@
+============================================================
+PHASE 5 — LONGITUDINAL TAXONOMIC COMPOSITION
+============================================================
+
+Date:
+Wed Aug 26 10:19:46 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+------------------------------------------------------------
+TAXONOMIC BAR PLOT
+------------------------------------------------------------
+Saved Visualization to: results/phase5/taxa-bar-plots.qzv
+
+------------------------------------------------------------
+COLLAPSING TAXONOMY
+------------------------------------------------------------
+Saved FeatureTable[Frequency] to: results/phase5/phylum-table.qza
+Saved FeatureTable[Frequency] to: results/phase5/family-table.qza
+Saved FeatureTable[Frequency] to: results/phase5/genus-table.qza
+
+------------------------------------------------------------
+RELATIVE ABUNDANCE
+------------------------------------------------------------
+Saved FeatureTable[RelativeFrequency] to: results/phase5/phylum-relative.qza
+Saved FeatureTable[RelativeFrequency] to: results/phase5/family-relative.qza
+Saved FeatureTable[RelativeFrequency] to: results/phase5/genus-relative.qza
+
+------------------------------------------------------------
+EXPORTING RELATIVE-ABUNDANCE TABLES
+------------------------------------------------------------
+Exported results/phase5/phylum-relative.qza as BIOMV210DirFmt to directory results/phase5/export/phylum
+Exported results/phase5/family-relative.qza as BIOMV210DirFmt to directory results/phase5/export/family
+Exported results/phase5/genus-relative.qza as BIOMV210DirFmt to directory results/phase5/export/genus
+
+------------------------------------------------------------
+CONVERTING BIOM TO TSV
+------------------------------------------------------------
+
+------------------------------------------------------------
+PHYLUM RELATIVE ABUNDANCE
+------------------------------------------------------------
+# Constructed from biom file
+#OTU ID	R009_14d	R009_30d	R009_7d	R009_before
+d__Bacteria;p__Bacteroidota	0.39275293118998356	0.3260110860192979	0.4701583434835566	0.6661120354963949
+d__Bacteria;p__Bacillota	0.40713035174279805	0.5358242660644631	0.32341816783127125	0.24690330929931595
+d__Bacteria;p__Actinomycetota	0.14796540930553345	0.07385547115582015	0.14866337585742675	0.0006008504344610834
+d__Bacteria;p__Verrucomicrobiota	0.0	0.0	0.0	0.08208541320022185
+d__Bacteria;p__Pseudomonadota	0.05156772242559287	0.05835557380414699	0.031284056670299376	0.003050471436494731
+d__Bacteria;p__Thermodesulfobacteriota	0.0005835853360921004	0.005953602956271813	0.006026027309442913	0.0
+d__Bacteria;p__Cyanobacteriota	0.0	0.0	0.020450028848003076	0.0
+d__Archaea;p__Methanobacteriota	0.0	0.0	0.0	0.0012479201331114808
+------------------------------------------------------------
+TOP GENUS-LEVEL FEATURES
+------------------------------------------------------------
+# Constructed from biom file
+#OTU ID	R009_14d	R009_30d	R009_7d	R009_before
+d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides	0.3899411109342671	0.3216485321289263	0.460734662478364	0.4875670179330745
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__	0.14197039630749642	0.14750564565797578	0.029809603179691006	0.03762248105010168
+d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium	0.1423417687941005	0.07365017450215562	0.1425091352009744	0.00036975411351451286
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia	0.14854899464162555	0.11896941079860399	0.047054298352458494	0.027269365871695324
+d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium	0.005411427661944931	0.08812358858550606	0.07372267453041861	0.020983545941948605
+d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia	0.0	0.0	0.0	0.08208541320022185
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes	0.018409464693087168	0.03212892629850134	0.010192961087249182	0.015575892031798854
+d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella	0.04811926362141228	0.00292547731471977	0.01955253541893711	0.0
+d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Sutterellaceae;g__Parasutterella	0.003448458804180593	0.040392116608499284	0.011603307904352843	0.0007857274912183398
+d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Incertae_Sedis	0.0	0.0	0.0	0.08985024958402663
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Tyzzerella	0.0035545652289246115	0.00990556353931431	0.034617603692544394	0.0
+d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger	0.0005305321237200913	0.0	0.0	0.03591236827509706
+d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes	0.0018568624330203194	0.003592691439129542	0.0025642669401884735	0.03161397670549085
+d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium	0.0	0.014370765756518168	0.006346560676966472	0.010445553706784988
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter	0.007109130457849223	0.005594333812358859	0.01673184178472979	0.0046219264189314106
+d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Barnesiellaceae;g__Barnesiella	0.0	0.0	0.0	0.02542059530412276
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia	0.0013793835216722372	0.019605830424964072	0.008654400923136098	0.0
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea	0.010504536049657807	0.012728392527201806	0.022886082441182128	0.0041135145128489555
+d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-352	0.0	0.0	0.0	0.01747088186356073
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fusicatenibacter	0.0016446495835322828	0.010829398480804763	0.0026283736136931855	0.001756332039193936
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus	0.009920950713565706	0.0025662081708068157	0.0	0.002126086152708449
+d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-56	0.0026526606186004563	0.007185382878259084	0.005961920635938201	0.0
+d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus	0.0031831927423205475	0.0038493122562102237	0.0008974934290659658	0.008227029025697911
+
+============================================================
+PHASE 5 CONCLUSION
+============================================================
+
+ASV counts were collapsed to phylum, family, and genus
+levels using SILVA 138.2 taxonomic assignments.
+
+Collapsed count tables were converted to relative
+frequencies using the unrarefied ASV feature table.
+
+Taxonomic bar plots and exported relative-abundance TSV
+files were generated for longitudinal interpretation.
+
+These results will be used to identify bacterial groups
+that increase, decrease, appear, or disappear across
+Before FMT -> 7d -> 14d -> 30d.
+
+============================================================
+END PHASE 5
+============================================================
