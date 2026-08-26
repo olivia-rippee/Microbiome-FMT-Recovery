@@ -1,0 +1,504 @@
+
+================================================================================
+GENUS
+================================================================================
+
+--------------------------------------------------------------------------------
+7d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       113
+Significant taxa:  73
+
+                                                                                                                        taxon       lfc       p_value       q_value direction
+                                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.521617 1.075556e-163 1.215378e-161 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia  5.477058  8.491381e-91  4.797630e-89 increased
+                                         d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea  4.557837  1.504463e-81  5.666809e-80 increased
+                            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;__ -6.802357  1.062225e-78  3.000785e-77 decreased
+                                 d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides  5.614182  2.753286e-63  6.222426e-62 increased
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter  3.683854  3.517828e-48  6.625242e-47 increased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lacticaseibacillus -4.541576  4.953599e-41  7.996524e-40 decreased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Acutalibacter  2.822867  1.623806e-38  2.293626e-37 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus -3.850689  8.264229e-36  1.037620e-34 decreased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Veillonella -4.192054  2.853364e-35  3.224301e-34 decreased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes  3.527247  2.176566e-31  2.235927e-30 increased
+                                        d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__Monoglobus  2.500894  4.902968e-28  4.616962e-27 increased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium  3.407450  7.597771e-28  6.604217e-27 increased
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium  3.769586  2.446560e-24  1.974724e-23 increased
+                      d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella  2.531932  7.873011e-24  5.931001e-23 increased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium  2.261443  1.867819e-22  1.319147e-21 increased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter  3.093618  3.574053e-22  2.375694e-21 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Agathobaculum  2.068224  1.999974e-19  1.255539e-18 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerobutyricum  3.131536  1.184657e-18  7.045589e-18 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger  2.684634  6.028539e-17  3.406124e-16 increased
+        d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelotrichaceae_UCG-003  2.302093  6.765576e-17  3.640524e-16 increased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group;g__Incertae_Sedis  2.237643  1.606444e-16  8.251280e-16 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus  2.516166  1.758779e-16  8.640958e-16 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fusicatenibacter  2.712619  5.693651e-16  2.680761e-15 increased
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus -2.896202  2.253690e-14  1.018668e-13 decreased
+                                    d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes  2.065715  2.560999e-14  1.113050e-13 increased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Megasphaera -2.027000  3.533034e-14  1.478640e-13 decreased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter  1.570695  4.918467e-13  1.984953e-12 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia  1.879336  6.523711e-13  2.541998e-12 increased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Romboutsia  2.051469  1.607730e-12  6.055783e-12 increased
+               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gauvreauii_group  2.132525  2.227293e-12  8.118843e-12 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__NK4A214_group  1.522589  4.128098e-12  1.457735e-11 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UCG-002  1.750194  4.622076e-12  1.582711e-11 increased
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Pediococcus -1.909227  1.024452e-11  3.404798e-11 decreased
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus -1.328026  5.490868e-11  1.772766e-10 decreased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium  2.032372  1.206673e-09  3.787613e-09 increased
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Intestinibacter  1.766884  7.979087e-09  2.396928e-08 increased
+                             d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides  1.558326  8.060466e-09  2.396928e-08 increased
+                        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae;g__Proteus -1.405164  1.126190e-08  3.263063e-08 decreased
+                 d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia  2.674925  1.715829e-08  4.847216e-08 increased
+                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gnavus_group  1.683585  4.106327e-08  1.131744e-07 increased
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae;g__Family_XIII_AD3011_group  1.065332  1.537659e-06  4.137034e-06 increased
+       d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella -1.949924  5.387024e-06  1.415660e-05 decreased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas  1.355601  6.495387e-06  1.668134e-05 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus  1.192600  7.471611e-06  1.876204e-05 increased
+                       d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium -1.513673  8.690073e-06  2.134735e-05 decreased
+                        d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella  0.904204  1.285325e-05  3.090250e-05 increased
+                     d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Thomasclavelia  1.310012  1.409858e-05  3.319041e-05 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor  1.062164  1.956919e-05  4.512894e-05 increased
+                      d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Acidaminococcus -0.981282  2.480749e-05  5.606492e-05 decreased
+                                                 d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;__ -1.164384  6.116442e-05  1.355212e-04 decreased
+                                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;__  0.929154  6.548989e-05  1.423146e-04 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster  1.181312  1.044252e-04  2.226423e-04 increased
+                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Eubacterium]_ventriosum_group  0.714771  1.082593e-04  2.265425e-04 increased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium  0.984868  1.922612e-04  3.950094e-04 increased
+                                      d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-352  1.300181  2.908201e-04  5.868334e-04 increased
+                           d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae;g__Schaalia -0.689426  3.765466e-04  7.464872e-04 decreased
+                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_UCG-010  0.814288  9.547553e-04  1.860127e-03 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus -0.678916  9.843335e-04  1.885249e-03 decreased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Sellimonas  0.734901  1.079290e-03  2.032662e-03 increased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae;g__Christensenellaceae_R-7_group  0.710823  1.705372e-03  3.159132e-03 increased
+                                 d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae;g__Rothia -0.376149  2.048045e-03  3.732728e-03 decreased
+                                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;__  0.758903  2.086116e-03  3.741763e-03 increased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Turicibacter  0.778289  2.270041e-03  4.008041e-03 increased
+                                  d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus -0.576705  2.401549e-03  4.175001e-03 decreased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Extibacter  0.748445  2.748143e-03  4.705154e-03 increased
+     d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio -0.588143  5.088723e-03  8.582473e-03 decreased
+                               d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemania  0.413936  6.973420e-03  1.158818e-02 increased
+                      d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Gordonibacter -0.254683  8.485473e-03  1.389650e-02 decreased
+                          d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis;g__Incertae_Sedis -0.413448  1.475072e-02  2.381187e-02 decreased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__DTU089  0.421572  2.321390e-02  3.694606e-02 increased
+         d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila  0.616204  2.677968e-02  4.202922e-02 increased
+                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_ND3007_group  0.429889  2.969797e-02  4.597083e-02 increased
+
+--------------------------------------------------------------------------------
+14d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       113
+Significant taxa:  73
+
+                                                                                                                        taxon       lfc       p_value       q_value direction
+                                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.477351 2.589362e-176 2.925979e-174 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia  5.863276 5.480424e-118 3.096440e-116 increased
+                            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;__ -7.796781 4.105360e-114 1.546352e-112 decreased
+                                         d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea  4.620895  1.394254e-94  3.938768e-93 increased
+                                 d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides  5.660884  5.047390e-76  1.140710e-74 increased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes  4.029965  3.178797e-53  5.986734e-52 increased
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter  3.580786  9.335537e-53  1.507022e-51 increased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Acutalibacter  3.111574  2.710462e-50  3.828528e-49 increased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lacticaseibacillus -4.752184  4.861297e-43  6.103629e-42 decreased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Veillonella -4.313257  3.699859e-36  4.180841e-35 decreased
+                                        d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__Monoglobus  2.857210  1.023122e-35  1.051026e-34 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus -3.841967  1.624001e-35  1.529268e-34 decreased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium  3.777377  3.196739e-35  2.778704e-34 increased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium  2.670779  4.440860e-33  3.584408e-32 increased
+                      d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella  2.775389  1.440138e-31  1.084904e-30 increased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group;g__Incertae_Sedis  2.954671  5.586318e-29  3.945337e-28 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Agathobaculum  2.429258  4.521511e-28  3.005475e-27 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerobutyricum  3.531337  5.397818e-26  3.388630e-25 increased
+        d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelotrichaceae_UCG-003  2.806715  1.273945e-23  7.576619e-23 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger  3.078547  1.888051e-21  1.066749e-20 increased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter  2.918107  8.735227e-21  4.700384e-20 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus  2.816372  9.649281e-21  4.956222e-20 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia  2.482212  8.311736e-20  4.083592e-19 increased
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium  3.399826  3.005694e-19  1.415181e-18 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fusicatenibacter  2.792635  9.147949e-19  4.134873e-18 increased
+                             d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides  1.950336  1.650693e-16  7.174167e-16 increased
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus -3.128354  4.675864e-16  1.956936e-15 decreased
+                                    d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes  2.206626  8.181793e-16  3.301938e-15 increased
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Pediococcus -2.203931  1.288267e-15  5.019798e-15 decreased
+               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gauvreauii_group  2.225310  2.010045e-14  7.571169e-14 increased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Megasphaera -2.012178  3.639583e-14  1.326687e-13 decreased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter  1.585772  2.498676e-13  8.823449e-13 increased
+                        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae;g__Proteus -1.711314  7.741236e-13  2.650787e-12 decreased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__NK4A214_group  1.656730  1.466929e-12  4.875383e-12 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium  2.242290  4.791390e-12  1.546934e-11 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UCG-002  1.810262  5.598568e-12  1.757328e-11 increased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Romboutsia  2.032347  2.159698e-11  6.595833e-11 increased
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae;g__Family_XIII_AD3011_group  1.345832  3.066056e-10  9.117483e-10 increased
+       d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella -2.645872  9.124447e-10  2.643750e-09 decreased
+                                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;__  1.309272  8.508999e-09  2.403792e-08 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus  1.466878  1.161255e-08  3.200531e-08 increased
+                                      d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-352  1.928751  1.261541e-08  3.394146e-08 increased
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Intestinibacter  1.629132  9.624932e-08  2.529343e-07 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor  1.195311  1.243785e-07  3.194267e-07 increased
+                 d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia  2.529002  1.393794e-07  3.499972e-07 increased
+                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_UCG-010  1.117947  2.102284e-07  5.164307e-07 increased
+                     d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Thomasclavelia  1.451937  6.394939e-07  1.537507e-06 increased
+                        d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella  1.070691  7.454215e-07  1.754847e-06 increased
+                       d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium -1.585412  1.296668e-06  2.990276e-06 decreased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Extibacter  1.244918  1.721323e-06  3.890189e-06 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster  1.396435  3.795975e-06  8.410690e-06 increased
+                                 d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae;g__Rothia -0.523575  6.300312e-06  1.369106e-05 decreased
+                      d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Acidaminococcus -1.078022  7.603333e-06  1.592377e-05 decreased
+                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gnavus_group  1.337400  7.609587e-06  1.592377e-05 increased
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus -0.986552  1.064211e-05  2.186471e-05 decreased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas  1.254916  1.122148e-05  2.264334e-05 increased
+                                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;__  1.047390  1.304533e-05  2.586179e-05 increased
+                                  d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus -0.771271  1.453330e-05  2.831488e-05 decreased
+                               d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemania  0.608539  8.661475e-05  1.658893e-04 increased
+                                                 d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;__ -1.146438  1.052919e-04  1.982998e-04 decreased
+                          d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis;g__Incertae_Sedis -0.623374  1.940268e-04  3.594266e-04 decreased
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae;g__Christensenellaceae_R-7_group  0.812854  3.096973e-04  5.644484e-04 increased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Turicibacter  0.919808  4.671653e-04  8.379315e-04 increased
+                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Eubacterium]_ventriosum_group  0.686615  7.293509e-04  1.287760e-03 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Anaerofustaceae;g__Anaerofustis -0.314090  7.948390e-04  1.381797e-03 decreased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Incertae_Sedis  0.542476  1.341510e-03  2.296827e-03 increased
+                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_ND3007_group  0.649178  2.254983e-03  3.803181e-03 increased
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium  0.718566  8.000652e-03  1.329520e-02 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas  0.556258  8.589335e-03  1.406659e-02 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__DTU089  0.499062  8.756895e-03  1.413613e-02 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus -0.559578  9.757960e-03  1.553027e-02 decreased
+         d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila  0.654880  1.529642e-02  2.400687e-02 increased
+                           d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae;g__Schaalia -0.425260  2.882473e-02  4.461910e-02 decreased
+
+--------------------------------------------------------------------------------
+30d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       113
+Significant taxa:  76
+
+                                                                                                                          taxon       lfc       p_value       q_value direction
+                                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__  5.728350 6.390953e-184 7.221777e-182 increased
+                                         d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia  5.947862 8.338088e-126 4.711020e-124 increased
+                              d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;__ -7.999621 2.054722e-125 7.739454e-124 decreased
+                                   d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides  5.731347  3.200871e-75  9.042459e-74 increased
+                                           d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea  4.518359  3.947502e-74  8.921353e-73 increased
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Acutalibacter  3.201059  5.576822e-60  1.050301e-58 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter  3.803094  4.675607e-57  7.547766e-56 increased
+                               d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lacticaseibacillus -4.938999  1.781547e-48  2.516436e-47 decreased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes  3.966341  5.342428e-48  6.707715e-47 increased
+                                          d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__Monoglobus  2.939359  1.179475e-41  1.332806e-40 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium  3.888405  3.095668e-38  3.180095e-37 increased
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus -3.891758  1.006980e-35  9.482392e-35 decreased
+                  d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Veillonella -4.148637  4.436615e-34  3.856442e-33 decreased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerobutyricum  3.955524  3.289378e-32  2.654998e-31 increased
+           d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group;g__Incertae_Sedis  3.265611  1.542233e-31  1.161816e-30 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium  2.471907  2.847022e-27  2.010709e-26 increased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter  3.483414  1.227023e-26  8.156093e-26 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia  2.814975  2.021042e-26  1.268765e-25 increased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Agathobaculum  2.314438  1.683344e-24  1.001146e-23 increased
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus  3.011932  2.242871e-24  1.267222e-23 increased
+                        d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella  2.559670  3.748994e-24  2.017316e-23 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger  3.275670  1.561786e-23  8.021901e-23 increased
+          d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelotrichaceae_UCG-003  2.738998  2.985425e-23  1.466752e-22 increased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fusicatenibacter  3.091352  1.140947e-17  5.371958e-17 increased
+                                      d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Pediococcus -2.391700  4.434905e-17  2.004577e-16 decreased
+                                      d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes  2.409777  2.854513e-16  1.240615e-15 increased
+                                d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus -3.013776  4.547104e-15  1.903047e-14 decreased
+                  d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Megasphaera -2.014130  1.167372e-13  4.711182e-13 decreased
+                          d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae;g__Proteus -1.622397  3.025415e-13  1.178869e-12 decreased
+           d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Romboutsia  2.232969  9.176593e-13  3.456517e-12 increased
+                  d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium  2.741942  1.765809e-12  6.436658e-12 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UCG-002  1.905757  3.180470e-12  1.123103e-11 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus  1.925755  7.816495e-12  2.676557e-11 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter  1.548289  1.420586e-11  4.721359e-11 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium  2.267298  9.660763e-11  3.119046e-10 increased
+         d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella -2.741392  1.228124e-10  3.854946e-10 decreased
+                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gauvreauii_group  1.858480  8.911741e-10  2.721694e-09 increased
+                                         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__DTU089  1.321011  1.502554e-09  4.468121e-09 increased
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__NK4A214_group  1.437297  2.036005e-09  5.899193e-09 increased
+                                        d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-352  2.025549  5.516308e-09  1.558357e-08 increased
+                                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;__  1.320849  1.303337e-08  3.592124e-08 increased
+                         d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_UCG-010  1.374197  7.168336e-08  1.928624e-07 increased
+      d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Intestinibacter  1.704424  8.837634e-08  2.299781e-07 increased
+  d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae;g__Family_XIII_AD3011_group  1.137369  8.954899e-08  2.299781e-07 increased
+                               d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides  1.389685  1.316374e-07  3.305560e-07 increased
+                                                   d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;__ -1.566701  2.509092e-07  6.163638e-07 decreased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor  1.234989  3.587866e-07  8.626145e-07 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster  1.491178  6.930267e-07  1.631500e-06 increased
+                     d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gnavus_group  1.514081  7.214126e-07  1.663666e-06 increased
+                                      d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Extibacter  1.274026  7.365175e-07  1.664529e-06 increased
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus -0.887316  2.464300e-06  5.460116e-06 decreased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas  1.079456  2.866638e-06  6.229425e-06 increased
+                       d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Thomasclavelia  1.414416  3.143148e-06  6.701428e-06 increased
+                   d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia  2.263556  6.078338e-06  1.271949e-05 increased
+           d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae;g__Christensenellaceae_R-7_group  1.069735  1.248401e-05  2.560085e-05 increased
+                        d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Gordonibacter -0.409835  1.268715e-05  2.560085e-05 decreased
+                                   d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae;g__Rothia -0.546115  1.406808e-05  2.788934e-05 decreased
+                         d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium -1.414267  2.295140e-05  4.471566e-05 decreased
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas  1.248739  2.342192e-05  4.485893e-05 increased
+                                      d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus -0.941648  3.705618e-05  6.978914e-05 decreased
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus -0.729657  7.287735e-05  1.350023e-04 decreased
+                                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;__  1.032986  1.278564e-04  2.330286e-04 increased
+                            d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis;g__Incertae_Sedis -0.478650  1.677474e-04  2.971653e-04 decreased
+                  d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium  1.038294  1.683060e-04  2.971653e-04 increased
+                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_ND3007_group  0.741417  3.703707e-04  6.438753e-04 increased
+                          d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella  0.690985  5.661505e-04  9.693183e-04 increased
+                                 d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemania  0.524138  7.574877e-04  1.277554e-03 increased
+                             d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae;g__Schaalia -0.623928  8.274162e-04  1.374971e-03 decreased
+                        d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Acidaminococcus -0.754037  1.828623e-03  2.994702e-03 decreased
+                               d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Turicibacter  0.766342  1.858077e-03  2.999467e-03 increased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Colidextribacter  0.453243  8.949531e-03  1.424362e-02 increased
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__GCA-900066575 -0.307596  1.312225e-02  2.059464e-02 decreased
+           d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila  0.683724  1.382519e-02  2.140064e-02 increased
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UCG-005  0.404534  1.550385e-02  2.367480e-02 increased
+                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Eubacterium]_ventriosum_group  0.430781  1.990484e-02  2.998996e-02 increased
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae;g__[Eubacterium]_brachy_group  0.343949  2.031664e-02  3.020764e-02 increased
+
+--------------------------------------------------------------------------------
+PERSISTENT DIFFERENTIAL TAXA
+--------------------------------------------------------------------------------
+                                                                                                                        taxon  significant_timepoints                              comparisons                    directions         min_q
+                                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;__                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased 7.221777e-182
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased 4.711020e-124
+                            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;__                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased 7.739454e-124
+                                         d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.938768e-93
+                                 d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.140710e-74
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Acutalibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.050301e-58
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  7.547766e-56
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  5.986734e-52
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lacticaseibacillus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.516436e-47
+                                        d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__Monoglobus                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.332806e-40
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Faecalibacterium                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.180095e-37
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Veillonella                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  4.180841e-35
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  9.482392e-35
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.584408e-32
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerobutyricum                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.654998e-31
+                      d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae;g__Collinsella                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.084904e-30
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group;g__Incertae_Sedis                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.161816e-30
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Agathobaculum                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.005475e-27
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  8.156093e-26
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.268765e-25
+                                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Coprococcus                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.267222e-23
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae;g__Bifidobacterium                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.974724e-23
+        d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelotrichaceae_UCG-003                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  7.576619e-23
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Gemmiger                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  8.021901e-23
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fusicatenibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  4.134873e-18
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Pediococcus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.004577e-16
+                             d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  7.174167e-16
+                                    d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.240615e-15
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.956936e-15
+               d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gauvreauii_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  7.571169e-14
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae;g__Megasphaera                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.326687e-13
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  8.823449e-13
+                        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae;g__Proteus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.178869e-12
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Romboutsia                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.456517e-12
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__NK4A214_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  4.875383e-12
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UCG-002                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.123103e-11
+                                     d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.546934e-11
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.676557e-11
+                                    d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.772766e-10
+       d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  3.854946e-10
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae;g__Family_XIII_AD3011_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  9.117483e-10
+                                       d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__DTU089                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  4.468121e-09
+                                      d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-352                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.558357e-08
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae;g__Intestinibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.396928e-08
+                                             d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;__                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.403792e-08
+                 d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  4.847216e-08
+                   d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Ruminococcus]_gnavus_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.131744e-07
+                       d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_UCG-010                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.928624e-07
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.194267e-07
+                                                 d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;__                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  6.163638e-07
+                     d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Thomasclavelia                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.537507e-06
+                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.631500e-06
+                                    d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Extibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.664529e-06
+                        d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Eggerthella                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.754847e-06
+                       d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.990276e-06
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  5.460116e-06
+                                 d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae;g__Rothia                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.369106e-05
+                      d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Acidaminococcus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.592377e-05
+                                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.668134e-05
+         d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae;g__Christensenellaceae_R-7_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.560085e-05
+                                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;__                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.586179e-05
+                                  d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.831488e-05
+                               d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Holdemania                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.658893e-04
+                d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__[Eubacterium]_ventriosum_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.265425e-04
+                d__Bacteria;p__Bacillota;c__Negativicutes;o__Acidaminococcales;f__Acidaminococcaceae;g__Phascolarctobacterium                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.971653e-04
+                          d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis;g__Incertae_Sedis                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.971653e-04
+                  d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospiraceae_ND3007_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  6.438753e-04
+                           d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae;g__Schaalia                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  7.464872e-04
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Turicibacter                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  8.379315e-04
+         d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.140064e-02
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas                       2              14d_vs_before;30d_vs_before           increased;increased  6.229425e-06
+                      d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Gordonibacter                       2               30d_vs_before;7d_vs_before           decreased;decreased  2.560085e-05
+
+================================================================================
+FAMILY
+================================================================================
+
+--------------------------------------------------------------------------------
+7d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       42
+Significant taxa:  31
+
+                                                                                                  taxon       lfc       p_value       q_value direction
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae  6.744000 5.288420e-162 2.221137e-160 increased
+                           d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae  5.538069 3.342539e-145 7.019331e-144 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae  5.781137  2.743132e-71  3.840385e-70 increased
+                          d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae  3.871307  3.809592e-62  4.000072e-61 increased
+                 d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae  3.119757  8.517257e-30  7.154496e-29 increased
+                                d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae  2.667848  1.851344e-29  1.295941e-28 increased
+         d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae -4.173236  5.043152e-28  3.025891e-27 decreased
+               d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae  2.760003  9.223547e-28  4.842362e-27 increased
+             d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae  3.928796  2.381917e-27  1.102371e-26 increased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae -4.134932  2.624692e-27  1.102371e-26 decreased
+ d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae  2.858401  1.777432e-25  6.786560e-25 increased
+                         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae  2.362207  5.782381e-23  2.023833e-22 increased
+         d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae -3.379320  2.118066e-21  6.842981e-21 decreased
+     d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group  2.404597  4.561857e-18  1.368557e-17 increased
+                 d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae  1.795425  8.406311e-18  2.353767e-17 increased
+      d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae  1.961967  1.338494e-17  3.513546e-17 increased
+                           d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae  2.232669  2.247740e-17  5.553239e-17 increased
+                       d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae  2.266516  8.162666e-17  1.904622e-16 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae  2.061443  7.363190e-14  1.627653e-13 increased
+             d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae -1.938320  3.057971e-12  6.421739e-12 decreased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae  2.124484  6.668478e-10  1.333696e-09 increased
+          d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae  2.841880  1.115713e-09  2.129997e-09 increased
+                  d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae -1.538635  3.458937e-06  6.316321e-06 decreased
+                    d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae  1.023858  7.159888e-06  1.252980e-05 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae  0.658272  7.065823e-05  1.187058e-04 increased
+                              d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae -0.997845  6.217693e-04  1.004397e-03 decreased
+                              d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Eubacteriaceae  0.467599  4.090058e-03  6.362312e-03 increased
+d__Bacteria;p__Thermodesulfobacteriota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae  0.815228  4.942506e-03  7.413760e-03 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae -0.400444  9.024673e-03  1.307022e-02 decreased
+ d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriales_Incertae_Sedis  0.456365  1.573985e-02  2.203579e-02 increased
+                 d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae -0.488463  1.769301e-02  2.397118e-02 decreased
+
+--------------------------------------------------------------------------------
+14d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       42
+Significant taxa:  31
+
+                                                                                                 taxon       lfc       p_value       q_value direction
+                          d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae  5.751316 1.188710e-166 4.992580e-165 increased
+                           d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae  6.605343 9.297588e-164 1.952493e-162 increased
+                         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae  4.116007  4.282923e-88  5.996092e-87 increased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae  5.604770  2.906830e-79  3.052171e-78 increased
+        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae -5.100889  3.894846e-42  3.271671e-41 decreased
+                d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae  3.279893  2.514004e-35  1.759803e-34 increased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae  2.801096  3.520155e-32  2.112093e-31 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae -4.436163  6.895789e-31  3.620289e-30 decreased
+              d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae  2.719275  3.631815e-30  1.694847e-29 increased
+                        d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae  2.536933  2.614352e-28  1.098028e-27 increased
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group  2.898557  4.626797e-27  1.766595e-26 increased
+     d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae  2.104369  3.571828e-22  1.250140e-21 increased
+                      d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae  2.262007  7.438364e-21  2.403164e-20 increased
+        d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae -3.272236  1.558647e-19  4.675940e-19 decreased
+            d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae  3.336712  1.742248e-19  4.878294e-19 increased
+                d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae  1.850750  2.321108e-19  6.092910e-19 increased
+            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae -2.404718  2.968129e-19  7.333023e-19 decreased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae  2.132319  1.445475e-18  3.372775e-18 increased
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae  2.443048  2.262926e-17  5.002258e-17 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae  2.150511  7.071142e-16  1.484940e-15 increased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae  2.084673  5.938389e-10  1.187678e-09 increased
+                 d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae -1.833866  2.617930e-08  4.997867e-08 decreased
+         d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae  2.472887  1.647070e-07  3.007693e-07 increased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae -0.775411  2.995544e-07  5.242203e-07 decreased
+                    d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae -0.579690  6.859599e-07  1.152413e-06 decreased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae -1.202967  5.157905e-05  8.332000e-05 decreased
+                     d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis -0.679488  5.446871e-05  8.472910e-05 decreased
+                   d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae  0.931712  6.913592e-05  1.037039e-04 increased
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Anaerofustaceae -0.370204  2.363144e-04  3.422484e-04 decreased
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae -0.539643  6.226715e-03  8.717402e-03 decreased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae -0.594664  2.982919e-02  4.041374e-02 decreased
+
+--------------------------------------------------------------------------------
+30d_vs_before
+--------------------------------------------------------------------------------
+Taxa tested:       42
+Significant taxa:  38
+
+                                                                                                 taxon       lfc       p_value       q_value direction
+                           d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae  5.743736 3.406946e-125 1.430917e-123 increased
+                          d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae  4.782751 1.573893e-112 3.305175e-111 increased
+        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae -6.153100  5.563328e-57  7.788660e-56 decreased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae  4.667775  4.624133e-54  4.855340e-53 increased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae -5.742470  3.243799e-50  2.724791e-49 decreased
+                         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae  3.135717  3.178531e-47  2.224971e-46 increased
+            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae -3.498686  9.194242e-41  5.516545e-40 decreased
+                    d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae -1.609688  7.320023e-37  3.843012e-36 decreased
+                     d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis -1.542223  3.396490e-34  1.585029e-33 decreased
+        d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae -4.271947  1.276954e-32  5.363208e-32 decreased
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Anaerofustaceae -1.225837  2.434899e-32  9.296886e-32 decreased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae -1.771639  3.663146e-32  1.282101e-31 decreased
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae -2.630689  6.121650e-18  1.977764e-17 decreased
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae -1.677287  2.826931e-17  8.480793e-17 decreased
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae  1.875786  1.657328e-16  4.640519e-16 increased
+                 d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae -2.630084  2.427220e-15  6.371453e-15 decreased
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group  2.202039  1.088996e-14  2.690461e-14 increased
+                        d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Barnesiellaceae -1.142761  1.296123e-12  3.024286e-12 decreased
+                d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae  1.996338  1.565911e-12  3.461489e-12 increased
+           d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Pasteurellaceae -1.359184  4.425616e-12  9.293793e-12 decreased
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae  1.911538  1.030364e-10  2.060727e-10 increased
+       d__Archaea;p__Methanobacteriota;c__Methanobacteria;o__Methanobacteriales;f__Methanobacteriaceae -1.052807  1.820109e-10  3.369452e-10 decreased
+                                                          d__Bacteria;p__Bacillota;c__Clostridia;__;__ -0.973466  1.845176e-10  3.369452e-10 decreased
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae -1.720464  1.190323e-09  2.083066e-09 decreased
+              d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae  1.496097  4.967188e-09  8.344876e-09 increased
+            d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Family_XI -1.031456  2.790328e-08  4.507453e-08 decreased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae -0.890223  4.014303e-08  6.244471e-08 decreased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Eubacteriaceae -0.869560  1.225305e-07  1.837958e-07 decreased
+                        d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae  1.258934  1.655069e-07  2.396996e-07 increased
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae  1.346316  3.104356e-06  4.346099e-06 increased
+            d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae  1.670625  1.185619e-05  1.606323e-05 increased
+     d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae  0.820859  2.604644e-04  3.418595e-04 increased
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae  1.102223  1.766841e-03  2.248707e-03 increased
+                      d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae  0.842695  1.871686e-03  2.312083e-03 increased
+d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriales_Incertae_Sedis -0.581697  2.601886e-03  3.122263e-03 decreased
+         d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae  1.199983  1.478293e-02  1.724675e-02 increased
+                d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae  0.462082  2.087479e-02  2.369571e-02 increased
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae  0.577215  2.604032e-02  2.878141e-02 increased
+
+--------------------------------------------------------------------------------
+PERSISTENT DIFFERENTIAL TAXA
+--------------------------------------------------------------------------------
+                                                                                                 taxon  significant_timepoints                              comparisons                    directions         min_q
+                          d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased 4.992580e-165
+                           d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased 1.952493e-162
+                         d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  5.996092e-87
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.052171e-78
+        d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  7.788660e-56
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  2.724791e-49
+            d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Morganellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  5.516545e-40
+                d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.759803e-34
+        d__Bacteria;p__Bacillota;c__Negativicutes;o__Veillonellales-Selenomonadales;f__Veillonellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  5.363208e-32
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.282101e-31
+                               d__Bacteria;p__Bacillota;c__Clostridia;o__Monoglobales;f__Monoglobaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.112093e-31
+              d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.694847e-29
+                        d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.098028e-27
+            d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.102371e-26
+    d__Bacteria;p__Bacillota;c__Clostridia;o__Oscillospirales;f__[Eubacterium]_coprostanoligenes_group                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.766595e-26
+d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Peptostreptococcaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  6.786560e-25
+     d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales-Tissierellales;f__Anaerovoracaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.250140e-21
+                      d__Bacteria;p__Bacillota;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.403164e-20
+                d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  6.092910e-19
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  3.372775e-18
+                             d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Enterococcaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  1.977764e-17
+                          d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  5.553239e-17
+                d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Actinomycetales;f__Actinomycetaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  8.480793e-17
+                 d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before decreased;decreased;decreased  6.371453e-15
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  1.187678e-09
+         d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae                       3 14d_vs_before;30d_vs_before;7d_vs_before increased;increased;increased  2.129997e-09
+                    d__Bacteria;p__Actinomycetota;c__Actinobacteria;o__Micrococcales;f__Micrococcaceae                       2              14d_vs_before;30d_vs_before           decreased;decreased  3.843012e-36
+                     d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Chloroplast;f__Incertae_Sedis                       2              14d_vs_before;30d_vs_before           decreased;decreased  1.585029e-33
+                            d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Anaerofustaceae                       2              14d_vs_before;30d_vs_before           decreased;decreased  9.296886e-32
+                            d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Streptococcaceae                       2              14d_vs_before;30d_vs_before           decreased;decreased  2.083066e-09
+                         d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae                       2               30d_vs_before;7d_vs_before           increased;decreased  6.244471e-08
+                             d__Bacteria;p__Bacillota;c__Clostridia;o__Eubacteriales;f__Eubacteriaceae                       2               30d_vs_before;7d_vs_before           increased;decreased  1.837958e-07
+                   d__Bacteria;p__Bacillota;c__Clostridia;o__Christensenellales;f__Christensenellaceae                       2               14d_vs_before;7d_vs_before           increased;increased  1.252980e-05
+d__Bacteria;p__Actinomycetota;c__Coriobacteriia;o__Coriobacteriales;f__Coriobacteriales_Incertae_Sedis                       2               30d_vs_before;7d_vs_before           increased;decreased  3.122263e-03
+
+================================================================================
+OUTPUTS
+================================================================================
+results/phase14/tables/family_ancombc_all_results.tsv
+results/phase14/tables/family_ancombc_persistence.tsv
+results/phase14/tables/family_ancombc_significant.tsv
+results/phase14/tables/genus_ancombc_all_results.tsv
+results/phase14/tables/genus_ancombc_persistence.tsv
+results/phase14/tables/genus_ancombc_significant.tsv
