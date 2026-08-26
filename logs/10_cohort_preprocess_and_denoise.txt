@@ -1,0 +1,121 @@
+============================================================
+PHASE 10 — COHORT PREPROCESSING AND ASV INFERENCE
+============================================================
+
+Date:
+Wed Aug 26 13:53:01 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+Samples:
+208
+
+------------------------------------------------------------
+INPUT VERIFICATION
+------------------------------------------------------------
+UUID:        0bac33d2-9afa-4686-a763-8b62add7865f
+Type:        SampleData[PairedEndSequencesWithQuality]
+Data format: SingleLanePerSamplePairedEndFastqDirFmt
+
+------------------------------------------------------------
+DADA2 PARAMETERS
+------------------------------------------------------------
+Forward truncation length: 230
+Reverse truncation length: 190
+Maximum expected errors R1: 2
+Maximum expected errors R2: 2
+Minimum overlap: 12
+Threads: 4
+
+Primer trimming:
+Skipped. Primer sequences were previously determined to be
+largely absent from the source reads.
+
+------------------------------------------------------------
+DADA2 DENOISING
+------------------------------------------------------------
+Saved FeatureTable[Frequency] to: results/phase10/table.qza
+Saved FeatureData[Sequence] to: results/phase10/rep-seqs.qza
+Saved SampleData[DADA2Stats] to: results/phase10/denoising-stats.qza
+Saved DADA2BaseTransitionStats to: results/phase10/base-transition-stats.qza
+
+------------------------------------------------------------
+FEATURE TABLE SUMMARY
+------------------------------------------------------------
+Saved ImmutableMetadata to: results/phase10/feature-frequencies.qza
+Saved ImmutableMetadata to: results/phase10/sample-frequencies.qza
+Saved Visualization to: results/phase10/table.qzv
+
+------------------------------------------------------------
+REPRESENTATIVE SEQUENCES
+------------------------------------------------------------
+Saved Visualization to: results/phase10/rep-seqs.qzv
+
+------------------------------------------------------------
+DENOISING STATISTICS
+------------------------------------------------------------
+Saved Visualization to: results/phase10/denoising-stats.qzv
+
+------------------------------------------------------------
+EXPORTING QC TABLES
+------------------------------------------------------------
+Exported results/phase10/denoising-stats.qza as DADA2StatsDirFmt to directory results/phase10/denoising-stats-export
+Exported results/phase10/sample-frequencies.qza as ImmutableMetadataDirectoryFormat to directory results/phase10/sample-frequencies-export
+Exported results/phase10/feature-frequencies.qza as ImmutableMetadataDirectoryFormat to directory results/phase10/feature-frequencies-export
+
+------------------------------------------------------------
+COHORT READ RETENTION
+------------------------------------------------------------
+Samples: 208
+
+Non-chimeric read retention (%):
+Minimum: 32.49
+25th percentile: 58.73
+Median: 61.78
+75th percentile: 64.37
+Maximum: 80.26
+
+Samples below 20% retention:
+None
+
+------------------------------------------------------------
+PHASE 10 OUTPUTS
+------------------------------------------------------------
+results/phase10/base-transition-stats.qza
+results/phase10/demux-paired.qza
+results/phase10/demux-paired.qzv
+results/phase10/denoising-stats-export/stats.tsv
+results/phase10/denoising-stats.qza
+results/phase10/denoising-stats.qzv
+results/phase10/feature-frequencies-export/metadata.tsv
+results/phase10/feature-frequencies.qza
+results/phase10/rep-seqs.qza
+results/phase10/rep-seqs.qzv
+results/phase10/sample-frequencies-export/metadata.tsv
+results/phase10/sample-frequencies.qza
+results/phase10/table.qza
+results/phase10/table.qzv
+
+============================================================
+PHASE 10 CONCLUSION
+============================================================
+
+The complete longitudinal recipient cohort was processed
+using paired-end DADA2 denoising.
+
+Forward and reverse reads were truncated to 230 and 190 bp,
+respectively, based on cohort-wide quality profiles.
+
+DADA2 performed quality filtering, denoising, paired-read
+merging, and chimera removal.
+
+The resulting cohort-wide ASV feature table and
+representative sequences were generated for downstream
+taxonomy, diversity, longitudinal, and differential
+abundance analyses.
+
+============================================================
+END PHASE 10
+============================================================

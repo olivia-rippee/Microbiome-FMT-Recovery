@@ -1,0 +1,95 @@
+============================================================
+PHASE 11 — COHORT TAXONOMIC CLASSIFICATION
+============================================================
+
+Date:
+Wed Aug 26 14:50:37 CDT 2026
+
+QIIME 2 environment:
+q2cli version 2026.7.0
+Run `qiime info` for more version details.
+
+Classifier:
+UUID:        43ca7947-314a-4022-a2ba-217f1a62caff
+Type:        TaxonomicClassifier
+Data format: TaxonomicClassiferTemporaryPickleDirFmt
+
+Representative sequences:
+UUID:        737cdf51-befa-4508-b499-cfe9eeb45bf0
+Type:        FeatureData[Sequence]
+Data format: DNASequencesDirectoryFormat
+
+------------------------------------------------------------
+CLASSIFYING ASVs
+------------------------------------------------------------
+Saved FeatureData[Taxonomy] to: results/phase11/taxonomy.qza
+
+------------------------------------------------------------
+GENERATING TAXONOMY TABLE
+------------------------------------------------------------
+Saved Visualization to: results/phase11/taxonomy.qzv
+
+------------------------------------------------------------
+GENERATING TAXONOMIC BAR PLOTS
+------------------------------------------------------------
+Saved Visualization to: results/phase11/taxa-bar-plots.qzv
+
+------------------------------------------------------------
+EXPORTING TAXONOMY
+------------------------------------------------------------
+Exported results/phase11/taxonomy.qza as TSVTaxonomyDirectoryFormat to directory results/phase11/taxonomy-export
+
+------------------------------------------------------------
+TAXONOMY SUMMARY
+------------------------------------------------------------
+Classified ASVs: 1571
+
+Confidence summary:
+count    1571.000000
+mean        0.964261
+std         0.069578
+min         0.700650
+25%         0.971219
+50%         0.999513
+75%         0.999999
+max         1.000000
+
+First classified ASVs:
+                      Feature ID                                                                                                                      Taxon  Confidence
+c6c3ab4e828fb40d6e05967b7aac9338                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__    0.982357
+d46e2205f0c6ecf67b51f83d111c509c d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia-Shigella;s__    0.942386
+7b28c20e72c6c95b3e604f0849245770           d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia;s__    1.000000
+945184b6386c192c0066e0a98a154780                             d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae    0.826844
+c939ee112ba982665e012437dae05c1e                             d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae    0.775450
+99deb3c5ecb022ec05609ebd1112a557                           d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__    1.000000
+fd44d4cb468fd7dc9b3227867714ed87                           d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__    1.000000
+0a68ec564e278b0246c920ad7de41880                                 d__Bacteria;p__Bacillota;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__    0.824086
+07b148ebe6cc2c05b1faa8d187c51114           d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia;s__    1.000000
+333bbf9224442fc10cd497377d2b1d01                           d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__    1.000000
+
+------------------------------------------------------------
+PHASE 11 OUTPUTS
+------------------------------------------------------------
+results/phase11/taxa-bar-plots.qzv
+results/phase11/taxonomy-export/taxonomy.tsv
+results/phase11/taxonomy.qza
+results/phase11/taxonomy.qzv
+
+============================================================
+PHASE 11 CONCLUSION
+============================================================
+
+Cohort-wide DADA2 ASVs were classified using the locally
+trained SILVA 138.2 V4 Naive Bayes classifier.
+
+Taxonomic assignments were saved as a QIIME 2 artifact,
+tabular visualization, exported TSV file, and taxonomic
+bar-plot visualization.
+
+These taxonomy results will support downstream cohort-level
+composition analysis, diversity interpretation, and
+differential-abundance testing.
+
+============================================================
+END PHASE 11
+============================================================
