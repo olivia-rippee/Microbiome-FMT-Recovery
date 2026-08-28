@@ -45,16 +45,12 @@ import pandas as pd
 BASE = Path("results/phase14")
 OUT = BASE / "tables"
 
-OUT.mkdir(
-    parents=True,
-    exist_ok=True,
-)
+OUT.mkdir(parents=True, exist_ok=True)
 
 TIMEPOINTS = {
     "timepoint7d": "7d_vs_before",
     "timepoint14d": "14d_vs_before",
-    "timepoint30d": "30d_vs_before",
-}
+    "timepoint30d": "30d_vs_before"}
 
 ALPHA = 0.05
 
@@ -68,55 +64,28 @@ print("PHASE 14 — ANCOM-BC RESULT SUMMARY")
 print("=" * 80)
 
 
-for rank in [
-    "genus",
-    "family",
-]:
+for rank in ["genus", "family"]:
 
-    directory = (
-        BASE
-        / rank
-        / "ancombc-export"
-    )
+    directory = (BASE / rank / "ancombc-export")
 
-    lfc_file = (
-        directory
-        / "lfc_slice.csv"
-    )
+    lfc_file = (directory / "lfc_slice.csv")
 
-    p_file = (
-        directory
-        / "p_val_slice.csv"
-    )
+    p_file = (directory / "p_val_slice.csv")
 
-    q_file = (
-        directory
-        / "q_val_slice.csv"
-    )
+    q_file = (directory / "q_val_slice.csv")
 
-    for path in [
-        lfc_file,
-        p_file,
-        q_file,
-    ]:
+    for path in [lfc_file, p_file, q_file]:
 
         if not path.exists():
 
             raise FileNotFoundError(
-                f"Required ANCOM-BC export missing: {path}"
-            )
+                f"Required ANCOM-BC export missing: {path}")
 
-    lfc = pd.read_csv(
-        lfc_file
-    )
+    lfc = pd.read_csv(lfc_file)
 
-    pval = pd.read_csv(
-        p_file
-    )
+    pval = pd.read_csv(p_file)
 
-    qval = pd.read_csv(
-        q_file
-    )
+    qval = pd.read_csv(q_file)
 
     print()
     print("=" * 80)
@@ -134,8 +103,7 @@ for rank in [
         for table_name, table in [
             ("LFC", lfc),
             ("p-value", pval),
-            ("q-value", qval),
-        ]:
+            ("q-value", qval)]:
 
             if coefficient not in table.columns:
 
@@ -143,133 +111,65 @@ for rank in [
                     f"{coefficient} not found in "
                     f"{rank} {table_name} output.\n"
                     f"Available columns: "
-                    f"{table.columns.tolist()}"
-                )
+                    f"{table.columns.tolist()}")
 
         result = pd.DataFrame(
-            {
-                "taxon": lfc["id"],
-                "comparison": comparison,
-                "lfc": pd.to_numeric(
-                    lfc[coefficient],
-                    errors="coerce",
-                ),
-                "p_value": pd.to_numeric(
-                    pval[coefficient],
-                    errors="coerce",
-                ),
-                "q_value": pd.to_numeric(
-                    qval[coefficient],
-                    errors="coerce",
-                ),
-            }
-        )
+            {"taxon": lfc["id"],
+             "comparison": comparison,
+             "lfc": pd.to_numeric(lfc[coefficient], errors="coerce"),
+             "p_value": pd.to_numeric(pval[coefficient], errors="coerce"),
+             "q_value": pd.to_numeric(qval[coefficient], errors="coerce")})
 
-        result["significant"] = (
-            result["q_value"]
-            < ALPHA
-        )
+        result["significant"] = (result["q_value"] < ALPHA)
 
-        result["direction"] = (
-            result["lfc"]
-            .apply(
+        result["direction"] = (result["lfc"].apply(
                 lambda value:
                     "increased"
                     if value > 0
                     else "decreased"
                     if value < 0
-                    else "no_change"
-            )
-        )
+                    else "no_change"))
 
-        result = result.sort_values(
-            [
-                "q_value",
-                "p_value",
-            ],
-            na_position="last",
-        )
+        result = result.sort_values(["q_value", "p_value"], na_position="last")
 
-        all_results.append(
-            result
-        )
+        all_results.append(result)
 
-        significant = result[
-            result["significant"]
-        ].copy()
+        significant = result[result["significant"]].copy()
 
         print()
         print("-" * 80)
         print(comparison)
         print("-" * 80)
 
-        print(
-            f"Taxa tested:      {len(result)}"
-        )
+        print(f"Taxa tested:      {len(result)}")
 
-        print(
-            f"Significant taxa: {len(significant)}"
-        )
+        print(f"Significant taxa: {len(significant)}")
 
         if len(significant):
 
             print()
 
-            print(
-                significant[
-                    [
-                        "taxon",
-                        "lfc",
-                        "p_value",
-                        "q_value",
-                        "direction",
-                    ]
-                ]
-                .to_string(
-                    index=False
-                )
-            )
+            print(significant[["taxon", "lfc", "p_value",
+                        "q_value", "direction"]].to_string(index=False))
 
         else:
-
-            print(
-                "No taxa significant at BH q < 0.05."
-            )
+            print("No taxa significant at BH q < 0.05.")
 
     # --------------------------------------------------------
     # Combine comparisons
     # --------------------------------------------------------
 
-    combined = pd.concat(
-        all_results,
-        ignore_index=True,
-    )
+    combined = pd.concat(all_results, ignore_index=True)
 
-    all_output = (
-        OUT
-        / f"{rank}_ancombc_all_results.tsv"
-    )
+    all_output = (OUT / f"{rank}_ancombc_all_results.tsv")
 
-    combined.to_csv(
-        all_output,
-        sep="\t",
-        index=False,
-    )
+    combined.to_csv(all_output, sep="\t", index=False)
 
-    significant = combined[
-        combined["significant"]
-    ].copy()
+    significant = combined[combined["significant"]].copy()
 
-    significant_output = (
-        OUT
-        / f"{rank}_ancombc_significant.tsv"
-    )
+    significant_output = (OUT / f"{rank}_ancombc_significant.tsv")
 
-    significant.to_csv(
-        significant_output,
-        sep="\t",
-        index=False,
-    )
+    significant.to_csv(significant_output, sep="\t", index=False)
 
     # --------------------------------------------------------
     # Persistence summary
@@ -277,92 +177,39 @@ for rank in [
 
     if len(significant):
 
-        persistence = (
-            significant
-            .groupby("taxon")
-            .agg(
-                significant_timepoints=(
-                    "comparison",
-                    "nunique",
-                ),
-                comparisons=(
-                    "comparison",
-                    lambda values:
-                        ";".join(
-                            sorted(values)
-                        ),
-                ),
-                directions=(
-                    "direction",
-                    lambda values:
-                        ";".join(values),
-                ),
-                min_q=(
-                    "q_value",
-                    "min",
-                ),
-            )
-            .reset_index()
-            .sort_values(
-                [
-                    "significant_timepoints",
-                    "min_q",
-                ],
-                ascending=[
-                    False,
-                    True,
-                ],
-            )
-        )
+        persistence = (significant.groupby("taxon").agg(
+                significant_timepoints=("comparison", "nunique"),
+                comparisons=("comparison",
+                    lambda values: ";".join(sorted(values))),
+                directions=("direction",
+                    lambda values: ";".join(values)),
+                min_q=("q_value", "min")).reset_index().sort_values(
+                ["significant_timepoints", "min_q"],
+                ascending=[False, True]))
 
     else:
 
-        persistence = pd.DataFrame(
-            columns=[
-                "taxon",
-                "significant_timepoints",
-                "comparisons",
-                "directions",
-                "min_q",
-            ]
-        )
+        persistence = pd.DataFrame(columns=["taxon", "significant_timepoints",
+		"comparisons", "directions", "min_q"])
 
-    persistence_output = (
-        OUT
-        / f"{rank}_ancombc_persistence.tsv"
-    )
+    persistence_output = (OUT / f"{rank}_ancombc_persistence.tsv")
 
-    persistence.to_csv(
-        persistence_output,
-        sep="\t",
-        index=False,
-    )
+    persistence.to_csv(persistence_output, sep="\t", index=False)
 
     print()
     print("-" * 80)
     print("PERSISTENT DIFFERENTIAL TAXA")
     print("-" * 80)
 
-    persistent = persistence[
-        persistence[
-            "significant_timepoints"
-        ] >= 2
-    ]
+    persistent = persistence[persistence["significant_timepoints"] >= 2]
 
     if len(persistent):
 
-        print(
-            persistent.to_string(
-                index=False
-            )
-        )
+        print(persistent.to_string(index=False))
 
     else:
 
-        print(
-            "No taxa significant at two "
-            "or more timepoints."
-        )
+        print("No taxa significant at two or more timepoints.")
 
 
 # ============================================================
@@ -374,12 +221,8 @@ print("=" * 80)
 print("OUTPUTS")
 print("=" * 80)
 
-for path in sorted(
-    OUT.glob("*ancombc*.tsv")
-):
-
+for path in sorted(OUT.glob("*ancombc*.tsv")):
     print(path)
-
 
 print()
 print("=" * 80)
