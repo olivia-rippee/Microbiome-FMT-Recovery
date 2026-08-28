@@ -1,0 +1,11 @@
+# GitHub Linguist configuration
+# Keep the repository language summary focused on analysis code.
+
+# Explicitly classify analysis scripts
+*.py linguist-language=Python
+*.sh linguist-language=Shell
+
+# Exclude generated results and data from language statistics
+data/** linguist-detectable=false
+results/** linguist-detectable=false
+logs/** linguist-detectable=false
