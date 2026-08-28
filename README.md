@@ -1,22 +1,29 @@
 # Longitudinal 16S Microbiome Analysis Following Fecal Microbiota Transplantation
 
-## Overview
+Reproducible longitudinal analysis of gut microbiome recovery following fecal microbiota transplantation (FMT) for recurrent *Clostridioides difficile* infection.
 
-This repository contains a reproducible longitudinal analysis of gut microbiome changes following fecal microbiota transplantation (FMT).
+This project reconstructs and analyzes a public 16S rRNA sequencing cohort comprising **52 FMT recipients and 208 longitudinal samples** collected before treatment and at 7, 14, and 30 days post-FMT.
 
-The project uses publicly available 16S rRNA gene amplicon sequencing data from NCBI BioProject **PRJNA298590**.
+The workflow spans raw sequencing-data acquisition, DADA2 denoising, SILVA taxonomic classification, phylogenetic and ecological diversity analysis, repeated-measures statistics, ANCOM-BC differential abundance, and integrated cohort-level visualization.
 
-The completed cohort analysis includes:
+## Key Findings
 
-- 52 participants
-- 4 longitudinal samples per participant
-- 208 total samples
-- pre-FMT baseline
-- 7 days post-FMT
-- 14 days post-FMT
-- 30 days post-FMT
+- **Microbial richness increased rapidly after FMT**, with median observed features increasing from 20.0 before FMT to 72.0 at day 7 and 82.5 at days 14 and 30.
+- **Post-FMT communities remained strongly displaced from each participant's pre-FMT baseline through day 30**, with median Bray-Curtis distances of 0.956–0.975.
+- **ANCOM-BC identified 70 genera with persistent differences from baseline across all three post-FMT timepoints**, including 52 persistent increases and 18 persistent decreases.
+- All **12/12 baseline-versus-post-FMT alpha-diversity comparisons** remained significant after multiple-testing correction.
 
-The workflow covers raw sequencing-data acquisition, quality control, ASV inference, taxonomic classification, phylogenetic and non-phylogenetic diversity analysis, repeated-measures longitudinal statistics, differential abundance analysis, and integrated cohort-level visualization.
+![Integrated cohort summary](results/phase16/figures/integrated_cohort_summary.png)
+
+## Skills Demonstrated
+
+Linux / WSL · Python · Bash · QIIME 2 / Rachis · DADA2 · SILVA taxonomy · phylogenetic diversity · repeated-measures analysis · ANCOM-BC · pandas · SciPy · matplotlib · Git / GitHub · reproducible research
+
+## Data Source and Project Contribution
+
+Sequence data were obtained from the publicly available **NCBI BioProject PRJNA298590**.
+
+The computational workflow, cohort reconstruction, reproducible processing pipeline, statistical analysis, visualization, result integration, and repository organization presented here were developed for this project. Raw sequencing data and large regenerable QIIME 2 artifacts are intentionally excluded from version control.
 
 ---
 
